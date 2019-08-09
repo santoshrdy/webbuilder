@@ -113,7 +113,7 @@ export class StaticObjectStorage implements IObjectStorage {
                     let meetsCriteria = true;
 
                     for (const filter of query.filters) {
-                        const left = x[filter.left].toUpperCase();
+                        const left = <string>Objects.getObjectAt(filter.left, x);
                         const right = filter.right.toUpperCase();
                         const operator = filter.operator;
 
@@ -131,7 +131,7 @@ export class StaticObjectStorage implements IObjectStorage {
                                 break;
 
                             default:
-                                throw new Error("Cannot translate operator into Firebase Realtime Database query.");
+                                throw new Error("Cannot translate operator into query.");
                         }
                     }
 
@@ -158,12 +158,16 @@ export class StaticObjectStorage implements IObjectStorage {
                     return 0;
                 });
             }
+
+            // if (query.select) {
+
+            // }
         }
 
         collection.forEach(item => {
             const segments = item.key.split("/");
             const key = segments[1];
-            
+
             Objects.setValue(key, searchResultObject, item);
             Objects.cleanupObject(item); // Ensure all "undefined" are cleaned up
         });
