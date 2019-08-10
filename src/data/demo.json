@@ -12423,6 +12423,1396 @@
             ],
             "type": "page"
         },
+        "ffdcdb4e-bad4-dfd7-3e9c-c0b2a917b6RU": {
+            "key": "files/ffdcdb4e-bad4-dfd7-3e9c-c0b2a917b66a",
+            "nodes": [
+                {
+                    "nodes": [
+                        {
+                            "nodes": [
+                                {
+                                    "nodes": [
+                                        {
+                                            "caption": "Picture",
+                                            "sourceKey": "uploads/f0b568bf-703a-0fa5-58b0-5b4574b18b93",
+                                            "styles": {
+                                                "appearance": "components/picture/default"
+                                            },
+                                            "type": "picture"
+                                        }
+                                    ],
+                                    "role": "aside",
+                                    "styles": {
+                                        "instance": {
+                                            "grid-cell": {
+                                                "md": {
+                                                    "alignment": {
+                                                        "horizontal": "center",
+                                                        "vertical": "center"
+                                                    },
+                                                    "position": {
+                                                        "col": 1,
+                                                        "row": 1
+                                                    },
+                                                    "span": {
+                                                        "cols": 1,
+                                                        "rows": 1
+                                                    }
+                                                },
+                                                "xs": {
+                                                    "alignment": {
+                                                        "horizontal": "center",
+                                                        "vertical": "center"
+                                                    },
+                                                    "position": {
+                                                        "col": 1,
+                                                        "row": 1
+                                                    },
+                                                    "span": {
+                                                        "cols": 1,
+                                                        "rows": 1
+                                                    }
+                                                }
+                                            },
+                                            "key": "zvwqkcxbzn",
+                                            "padding": {
+                                                "md": {
+                                                    "bottom": 15,
+                                                    "left": 15,
+                                                    "right": 15,
+                                                    "top": 15
+                                                },
+                                                "xs": {
+                                                    "bottom": 5,
+                                                    "left": 5,
+                                                    "right": 5,
+                                                    "top": 5
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "type": "grid-cell"
+                                },
+                                {
+                                    "nodes": [
+                                        {
+                                            "nodes": [
+                                                {
+                                                    "attrs": {
+                                                        "id": "Lo8Dp",
+                                                        "styles": {
+                                                            "alignment": {
+                                                                "md": "utils/text/alignLeft",
+                                                                "xl": "utils/text/alignLeft",
+                                                                "xs": "utils/text/alignCenter"
+                                                            }
+                                                        }
+                                                    },
+                                                    "nodes": [
+                                                        {
+                                                            "text": "Всем привет!",
+                                                            "type": "text"
+                                                        }
+                                                    ],
+                                                    "type": "heading1"
+                                                },
+                                                {
+                                                    "attrs": {
+                                                        "styles": {
+                                                            "alignment": {
+                                                                "md": "utils/text/alignLeft",
+                                                                "xl": "utils/text/alignLeft",
+                                                                "xs": "utils/text/alignCenter"
+                                                            }
+                                                        }
+                                                    },
+                                                    "nodes": [
+                                                        {
+                                                            "text": "Give your users a tool to create professional web pages, forms, email templates and more",
+                                                            "type": "text"
+                                                        }
+                                                    ],
+                                                    "type": "paragraph"
+                                                }
+                                            ],
+                                            "type": "text-block"
+                                        },
+                                        {
+                                            "encType": "application/x-www-form-urlencoded",
+                                            "formAction": "",
+                                            "formMethod": "post",
+                                            "formTarget": "_self",
+                                            "isInline": true,
+                                            "nodes": [
+                                                {
+                                                    "inputProperties": [
+                                                        {
+                                                            "propertyName": "inputName",
+                                                            "propertyValue": "email"
+                                                        },
+                                                        {
+                                                            "propertyName": "placeholderText",
+                                                            "propertyValue": "Enter your email"
+                                                        },
+                                                        {
+                                                            "propertyName": "labelText",
+                                                            "propertyValue": ""
+                                                        },
+                                                        {
+                                                            "propertyName": "inputValue",
+                                                            "propertyValue": ""
+                                                        },
+                                                        {
+                                                            "propertyName": "maxLength"
+                                                        },
+                                                        {
+                                                            "propertyName": "patternRegexp",
+                                                            "propertyValue": ""
+                                                        },
+                                                        {
+                                                            "propertyName": "isRequired"
+                                                        },
+                                                        {
+                                                            "propertyName": "isReadonly"
+                                                        }
+                                                    ],
+                                                    "type": "input:email"
+                                                },
+                                                {
+                                                    "inputProperties": [
+                                                        {
+                                                            "propertyName": "inputName",
+                                                            "propertyValue": "subscribe"
+                                                        },
+                                                        {
+                                                            "propertyName": "labelText",
+                                                            "propertyValue": "Subscribe"
+                                                        },
+                                                        {
+                                                            "propertyName": "inputValue",
+                                                            "propertyValue": ""
+                                                        }
+                                                    ],
+                                                    "type": "input:submit"
+                                                }
+                                            ],
+                                            "type": "form"
+                                        }
+                                    ],
+                                    "role": "article",
+                                    "styles": {
+                                        "instance": {
+                                            "grid-cell": {
+                                                "md": {
+                                                    "alignment": {
+                                                        "horizontal": "start",
+                                                        "vertical": "center"
+                                                    },
+                                                    "position": {
+                                                        "col": 2,
+                                                        "row": 1
+                                                    },
+                                                    "span": {
+                                                        "cols": 1,
+                                                        "rows": 1
+                                                    }
+                                                },
+                                                "xs": {
+                                                    "alignment": {
+                                                        "horizontal": "center",
+                                                        "vertical": "center"
+                                                    },
+                                                    "position": {
+                                                        "col": 1,
+                                                        "row": 2
+                                                    },
+                                                    "span": {
+                                                        "cols": 1,
+                                                        "rows": 1
+                                                    }
+                                                }
+                                            },
+                                            "key": "xypepelssf",
+                                            "padding": {
+                                                "md": {
+                                                    "bottom": 15,
+                                                    "left": 15,
+                                                    "right": 15,
+                                                    "top": 15
+                                                },
+                                                "xs": {
+                                                    "bottom": 5,
+                                                    "left": 5,
+                                                    "right": 5,
+                                                    "top": 5
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "type": "grid-cell"
+                                },
+                                {
+                                    "nodes": [
+                                        {
+                                            "nodes": [
+                                                {
+                                                    "attrs": {
+                                                        "id": "IKoaG",
+                                                        "styles": {
+                                                            "alignment": {
+                                                                "md": "utils/text/alignLeft",
+                                                                "xl": "utils/text/alignLeft",
+                                                                "xs": "utils/text/alignCenter"
+                                                            }
+                                                        }
+                                                    },
+                                                    "nodes": [
+                                                        {
+                                                            "text": "Simple and powerful",
+                                                            "type": "text"
+                                                        }
+                                                    ],
+                                                    "type": "heading2"
+                                                },
+                                                {
+                                                    "nodes": [
+                                                        {
+                                                            "nodes": [
+                                                                {
+                                                                    "nodes": [
+                                                                        {
+                                                                            "text": "first class drag and drop",
+                                                                            "type": "text"
+                                                                        }
+                                                                    ],
+                                                                    "type": "paragraph"
+                                                                }
+                                                            ],
+                                                            "type": "list-item"
+                                                        },
+                                                        {
+                                                            "nodes": [
+                                                                {
+                                                                    "nodes": [
+                                                                        {
+                                                                            "text": "responsive layouts",
+                                                                            "type": "text"
+                                                                        }
+                                                                    ],
+                                                                    "type": "paragraph"
+                                                                }
+                                                            ],
+                                                            "type": "list-item"
+                                                        },
+                                                        {
+                                                            "nodes": [
+                                                                {
+                                                                    "nodes": [
+                                                                        {
+                                                                            "text": "full-text search",
+                                                                            "type": "text"
+                                                                        }
+                                                                    ],
+                                                                    "type": "paragraph"
+                                                                }
+                                                            ],
+                                                            "type": "list-item"
+                                                        },
+                                                        {
+                                                            "nodes": [
+                                                                {
+                                                                    "nodes": [
+                                                                        {
+                                                                            "text": "website hyperlink consistency",
+                                                                            "type": "text"
+                                                                        }
+                                                                    ],
+                                                                    "type": "paragraph"
+                                                                }
+                                                            ],
+                                                            "type": "list-item"
+                                                        }
+                                                    ],
+                                                    "type": "bulleted-list"
+                                                }
+                                            ],
+                                            "type": "text-block"
+                                        },
+                                        {
+                                            "hyperlink": {
+                                                "targetKey": "pages/55540044-1473-db43-f130-6228f75d572b"
+                                            },
+                                            "label": "Learn more >",
+                                            "styles": {
+                                                "appearance": "components/button/default"
+                                            },
+                                            "type": "button"
+                                        }
+                                    ],
+                                    "role": "article",
+                                    "styles": {
+                                        "instance": {
+                                            "grid-cell": {
+                                                "md": {
+                                                    "alignment": {
+                                                        "horizontal": "start",
+                                                        "vertical": "center"
+                                                    },
+                                                    "position": {
+                                                        "col": 1,
+                                                        "row": 2
+                                                    },
+                                                    "span": {
+                                                        "cols": 1,
+                                                        "rows": 1
+                                                    }
+                                                },
+                                                "xs": {
+                                                    "alignment": {
+                                                        "horizontal": "center",
+                                                        "vertical": "center"
+                                                    },
+                                                    "position": {
+                                                        "col": 1,
+                                                        "row": 4
+                                                    },
+                                                    "span": {
+                                                        "cols": 1,
+                                                        "rows": 1
+                                                    }
+                                                }
+                                            },
+                                            "key": "kzucrcywdw",
+                                            "padding": {
+                                                "md": {
+                                                    "bottom": 15,
+                                                    "left": 15,
+                                                    "right": 15,
+                                                    "top": 15
+                                                },
+                                                "xs": {
+                                                    "bottom": 5,
+                                                    "left": 5,
+                                                    "right": 5,
+                                                    "top": 5
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "type": "grid-cell"
+                                },
+                                {
+                                    "nodes": [
+                                        {
+                                            "caption": "editors.png",
+                                            "sourceKey": "uploads/f4f94aa8-269b-9d08-4247-07981b8476c3",
+                                            "styles": {
+                                                "appearance": "components/picture/default"
+                                            },
+                                            "type": "picture"
+                                        }
+                                    ],
+                                    "role": "aside",
+                                    "styles": {
+                                        "instance": {
+                                            "grid-cell": {
+                                                "md": {
+                                                    "alignment": {
+                                                        "horizontal": "center",
+                                                        "vertical": "center"
+                                                    },
+                                                    "position": {
+                                                        "col": 2,
+                                                        "row": 2
+                                                    },
+                                                    "span": {
+                                                        "cols": 1,
+                                                        "rows": 1
+                                                    }
+                                                },
+                                                "xs": {
+                                                    "alignment": {
+                                                        "horizontal": "center",
+                                                        "vertical": "center"
+                                                    },
+                                                    "position": {
+                                                        "col": 1,
+                                                        "row": 3
+                                                    },
+                                                    "span": {
+                                                        "cols": 1,
+                                                        "rows": 1
+                                                    }
+                                                }
+                                            },
+                                            "key": "ygwnyxaxth",
+                                            "padding": {
+                                                "md": {
+                                                    "bottom": 15,
+                                                    "left": 15,
+                                                    "right": 15,
+                                                    "top": 15
+                                                },
+                                                "xs": {
+                                                    "bottom": 5,
+                                                    "left": 5,
+                                                    "right": 5,
+                                                    "top": 5
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "type": "grid-cell"
+                                }
+                            ],
+                            "styles": {
+                                "instance": {
+                                    "grid": {
+                                        "md": {
+                                            "cols": [
+                                                "1fr",
+                                                "1fr"
+                                            ],
+                                            "rows": [
+                                                "auto",
+                                                "auto"
+                                            ]
+                                        },
+                                        "xs": {
+                                            "cols": [
+                                                "1fr"
+                                            ],
+                                            "rows": [
+                                                "auto",
+                                                "auto",
+                                                "auto",
+                                                "auto"
+                                            ]
+                                        }
+                                    },
+                                    "key": "xtsaazaonw",
+                                    "margin": {
+                                        "md": {
+                                            "bottom": 15,
+                                            "top": 15
+                                        },
+                                        "xl": {
+                                            "bottom": "0",
+                                            "left": "auto",
+                                            "right": "auto",
+                                            "top": "0"
+                                        },
+                                        "xs": {
+                                            "bottom": 10,
+                                            "left": "auto",
+                                            "right": "auto",
+                                            "top": 10
+                                        }
+                                    },
+                                    "size": {
+                                        "lg": {
+                                            "maxWidth": 960
+                                        },
+                                        "md": {
+                                            "maxWidth": 720
+                                        },
+                                        "sm": {
+                                            "maxWidth": 540
+                                        },
+                                        "xl": {
+                                            "maxWidth": 1140
+                                        }
+                                    }
+                                }
+                            },
+                            "type": "grid"
+                        }
+                    ],
+                    "type": "layout-section"
+                },
+                {
+                    "nodes": [
+                        {
+                            "nodes": [
+                                {
+                                    "nodes": [
+                                        {
+                                            "caption": "Picture",
+                                            "sourceKey": "uploads/cc3b22af-b12a-716c-3666-66971360eb09",
+                                            "styles": {
+                                                "appearance": "components/picture/default"
+                                            },
+                                            "type": "picture"
+                                        }
+                                    ],
+                                    "role": "aside",
+                                    "styles": {
+                                        "instance": {
+                                            "grid-cell": {
+                                                "md": {
+                                                    "alignment": {
+                                                        "horizontal": "center",
+                                                        "vertical": "center"
+                                                    },
+                                                    "position": {
+                                                        "col": 1,
+                                                        "row": 1
+                                                    },
+                                                    "span": {
+                                                        "cols": 1,
+                                                        "rows": 1
+                                                    }
+                                                },
+                                                "xs": {
+                                                    "alignment": {
+                                                        "horizontal": "center",
+                                                        "vertical": "center"
+                                                    },
+                                                    "position": {
+                                                        "col": 1,
+                                                        "row": 1
+                                                    },
+                                                    "span": {
+                                                        "cols": 1,
+                                                        "rows": 1
+                                                    }
+                                                }
+                                            },
+                                            "key": "vgdzjdhvvp",
+                                            "padding": {
+                                                "md": {
+                                                    "bottom": 15,
+                                                    "left": 15,
+                                                    "right": 15,
+                                                    "top": 15
+                                                },
+                                                "xs": {
+                                                    "bottom": 5,
+                                                    "left": 5,
+                                                    "right": 5,
+                                                    "top": 5
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "type": "grid-cell"
+                                },
+                                {
+                                    "nodes": [
+                                        {
+                                            "nodes": [
+                                                {
+                                                    "attrs": {
+                                                        "id": "YUFqr",
+                                                        "styles": {
+                                                            "alignment": {
+                                                                "md": "utils/text/alignLeft",
+                                                                "xl": "utils/text/alignLeft",
+                                                                "xs": "utils/text/alignCenter"
+                                                            }
+                                                        }
+                                                    },
+                                                    "nodes": [
+                                                        {
+                                                            "text": "Theme and framework agnostic",
+                                                            "type": "text"
+                                                        }
+                                                    ],
+                                                    "type": "heading2"
+                                                },
+                                                {
+                                                    "nodes": [
+                                                        {
+                                                            "nodes": [
+                                                                {
+                                                                    "nodes": [
+                                                                        {
+                                                                            "text": "stores intents rather than specific markup",
+                                                                            "type": "text"
+                                                                        }
+                                                                    ],
+                                                                    "type": "paragraph"
+                                                                }
+                                                            ],
+                                                            "type": "list-item"
+                                                        },
+                                                        {
+                                                            "nodes": [
+                                                                {
+                                                                    "nodes": [
+                                                                        {
+                                                                            "text": "describes everything including page structure",
+                                                                            "type": "text"
+                                                                        }
+                                                                    ],
+                                                                    "type": "paragraph"
+                                                                }
+                                                            ],
+                                                            "type": "list-item"
+                                                        },
+                                                        {
+                                                            "nodes": [
+                                                                {
+                                                                    "nodes": [
+                                                                        {
+                                                                            "text": "publishes HTML, markdown, plain text, etc.",
+                                                                            "type": "text"
+                                                                        }
+                                                                    ],
+                                                                    "type": "paragraph"
+                                                                }
+                                                            ],
+                                                            "type": "list-item"
+                                                        }
+                                                    ],
+                                                    "type": "bulleted-list"
+                                                }
+                                            ],
+                                            "type": "text-block"
+                                        },
+                                        {
+                                            "hyperlink": {
+                                                "targetKey": "pages/79f3c265-7eab-9418-e364-54a9bb1c85d3"
+                                            },
+                                            "label": "Learn more >",
+                                            "styles": {
+                                                "appearance": "components/button/default"
+                                            },
+                                            "type": "button"
+                                        }
+                                    ],
+                                    "role": "article",
+                                    "styles": {
+                                        "instance": {
+                                            "grid-cell": {
+                                                "md": {
+                                                    "alignment": {
+                                                        "horizontal": "start",
+                                                        "vertical": "center"
+                                                    },
+                                                    "position": {
+                                                        "col": 2,
+                                                        "row": 1
+                                                    },
+                                                    "span": {
+                                                        "cols": 1,
+                                                        "rows": 1
+                                                    }
+                                                },
+                                                "xs": {
+                                                    "alignment": {
+                                                        "horizontal": "center",
+                                                        "vertical": "center"
+                                                    },
+                                                    "position": {
+                                                        "col": 1,
+                                                        "row": 2
+                                                    },
+                                                    "span": {
+                                                        "cols": 1,
+                                                        "rows": 1
+                                                    }
+                                                }
+                                            },
+                                            "key": "swzgczeqdj",
+                                            "padding": {
+                                                "md": {
+                                                    "bottom": 15,
+                                                    "left": 15,
+                                                    "right": 15,
+                                                    "top": 15
+                                                },
+                                                "xs": {
+                                                    "bottom": 5,
+                                                    "left": 5,
+                                                    "right": 5,
+                                                    "top": 5
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "type": "grid-cell"
+                                },
+                                {
+                                    "nodes": [
+                                        {
+                                            "nodes": [
+                                                {
+                                                    "attrs": {
+                                                        "id": "CDf7u",
+                                                        "styles": {
+                                                            "alignment": {
+                                                                "md": "utils/text/alignLeft",
+                                                                "xl": "utils/text/alignLeft",
+                                                                "xs": "utils/text/alignCenter"
+                                                            }
+                                                        }
+                                                    },
+                                                    "nodes": [
+                                                        {
+                                                            "text": "API-first. Offline-first. Mobile-first.",
+                                                            "type": "text"
+                                                        }
+                                                    ],
+                                                    "type": "heading2"
+                                                },
+                                                {
+                                                    "nodes": [
+                                                        {
+                                                            "nodes": [
+                                                                {
+                                                                    "nodes": [
+                                                                        {
+                                                                            "text": "continues work in absence of network",
+                                                                            "type": "text"
+                                                                        }
+                                                                    ],
+                                                                    "type": "paragraph"
+                                                                }
+                                                            ],
+                                                            "type": "list-item"
+                                                        },
+                                                        {
+                                                            "nodes": [
+                                                                {
+                                                                    "nodes": [
+                                                                        {
+                                                                            "text": "supports \"touch\" and runs on any device",
+                                                                            "type": "text"
+                                                                        }
+                                                                    ],
+                                                                    "type": "paragraph"
+                                                                }
+                                                            ],
+                                                            "type": "list-item"
+                                                        }
+                                                    ],
+                                                    "type": "bulleted-list"
+                                                }
+                                            ],
+                                            "type": "text-block"
+                                        },
+                                        {
+                                            "hyperlink": {
+                                                "targetKey": "pages/79f3c265-7eab-9418-e364-54a9bb1c85d3"
+                                            },
+                                            "label": "Learn more >",
+                                            "styles": {
+                                                "appearance": "components/button/default"
+                                            },
+                                            "type": "button"
+                                        }
+                                    ],
+                                    "role": "article",
+                                    "styles": {
+                                        "instance": {
+                                            "grid-cell": {
+                                                "md": {
+                                                    "alignment": {
+                                                        "horizontal": "start",
+                                                        "vertical": "center"
+                                                    },
+                                                    "position": {
+                                                        "col": 1,
+                                                        "row": 2
+                                                    },
+                                                    "span": {
+                                                        "cols": 1,
+                                                        "rows": 1
+                                                    }
+                                                },
+                                                "xs": {
+                                                    "alignment": {
+                                                        "horizontal": "center",
+                                                        "vertical": "center"
+                                                    },
+                                                    "position": {
+                                                        "col": 1,
+                                                        "row": 4
+                                                    },
+                                                    "span": {
+                                                        "cols": 1,
+                                                        "rows": 1
+                                                    }
+                                                }
+                                            },
+                                            "key": "dqblsbuwki",
+                                            "padding": {
+                                                "md": {
+                                                    "bottom": 15,
+                                                    "left": 15,
+                                                    "right": 15,
+                                                    "top": 15
+                                                },
+                                                "xs": {
+                                                    "bottom": 5,
+                                                    "left": 5,
+                                                    "right": 5,
+                                                    "top": 5
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "type": "grid-cell"
+                                },
+                                {
+                                    "nodes": [
+                                        {
+                                            "caption": "Picture",
+                                            "sourceKey": "uploads/adfbffad-ac01-ed54-fbe0-6253d0c663fd",
+                                            "styles": {
+                                                "appearance": "components/picture/default"
+                                            },
+                                            "type": "picture"
+                                        }
+                                    ],
+                                    "role": "aside",
+                                    "styles": {
+                                        "instance": {
+                                            "grid-cell": {
+                                                "md": {
+                                                    "alignment": {
+                                                        "horizontal": "center",
+                                                        "vertical": "center"
+                                                    },
+                                                    "position": {
+                                                        "col": 2,
+                                                        "row": 2
+                                                    },
+                                                    "span": {
+                                                        "cols": 1,
+                                                        "rows": 1
+                                                    }
+                                                },
+                                                "xs": {
+                                                    "alignment": {
+                                                        "horizontal": "center",
+                                                        "vertical": "center"
+                                                    },
+                                                    "position": {
+                                                        "col": 1,
+                                                        "row": 3
+                                                    },
+                                                    "span": {
+                                                        "cols": 1,
+                                                        "rows": 1
+                                                    }
+                                                }
+                                            },
+                                            "key": "rwbxokfjah",
+                                            "padding": {
+                                                "md": {
+                                                    "bottom": 15,
+                                                    "left": 15,
+                                                    "right": 15,
+                                                    "top": 15
+                                                },
+                                                "xs": {
+                                                    "bottom": 5,
+                                                    "left": 5,
+                                                    "right": 5,
+                                                    "top": 5
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "type": "grid-cell"
+                                }
+                            ],
+                            "styles": {
+                                "instance": {
+                                    "grid": {
+                                        "md": {
+                                            "cols": [
+                                                "1fr",
+                                                "1fr"
+                                            ],
+                                            "rows": [
+                                                "auto",
+                                                "auto"
+                                            ]
+                                        },
+                                        "xs": {
+                                            "cols": [
+                                                "1fr"
+                                            ],
+                                            "rows": [
+                                                "auto",
+                                                "auto",
+                                                "auto",
+                                                "auto"
+                                            ]
+                                        }
+                                    },
+                                    "key": "coceadpgzv",
+                                    "margin": {
+                                        "md": {
+                                            "bottom": 15,
+                                            "top": 15
+                                        },
+                                        "xl": {
+                                            "bottom": 25,
+                                            "top": 25
+                                        },
+                                        "xs": {
+                                            "bottom": 10,
+                                            "left": "auto",
+                                            "right": "auto",
+                                            "top": 10
+                                        }
+                                    },
+                                    "size": {
+                                        "lg": {
+                                            "maxWidth": 960
+                                        },
+                                        "md": {
+                                            "maxWidth": 720
+                                        },
+                                        "sm": {
+                                            "maxWidth": 540
+                                        },
+                                        "xl": {
+                                            "maxWidth": 1140
+                                        }
+                                    }
+                                }
+                            },
+                            "type": "grid"
+                        }
+                    ],
+                    "type": "layout-section"
+                },
+                {
+                    "nodes": [
+                        {
+                            "nodes": [
+                                {
+                                    "nodes": [
+                                        {
+                                            "caption": "Picture",
+                                            "sourceKey": "uploads/5b9a572c-5ede-0da1-1ffa-f2ce06ba0fae",
+                                            "styles": {
+                                                "appearance": "components/picture/default"
+                                            },
+                                            "type": "picture"
+                                        }
+                                    ],
+                                    "role": "aside",
+                                    "styles": {
+                                        "instance": {
+                                            "grid-cell": {
+                                                "md": {
+                                                    "alignment": {
+                                                        "horizontal": "center",
+                                                        "vertical": "center"
+                                                    },
+                                                    "position": {
+                                                        "col": 1,
+                                                        "row": 1
+                                                    },
+                                                    "span": {
+                                                        "cols": 1,
+                                                        "rows": 1
+                                                    }
+                                                },
+                                                "xs": {
+                                                    "alignment": {
+                                                        "horizontal": "center",
+                                                        "vertical": "center"
+                                                    },
+                                                    "position": {
+                                                        "col": 1,
+                                                        "row": 1
+                                                    },
+                                                    "span": {
+                                                        "cols": 1,
+                                                        "rows": 1
+                                                    }
+                                                }
+                                            },
+                                            "key": "akeqglhvvj",
+                                            "padding": {
+                                                "md": {
+                                                    "bottom": 15,
+                                                    "left": 15,
+                                                    "right": 15,
+                                                    "top": 15
+                                                },
+                                                "xs": {
+                                                    "bottom": 5,
+                                                    "left": 5,
+                                                    "right": 5,
+                                                    "top": 5
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "type": "grid-cell"
+                                },
+                                {
+                                    "nodes": [
+                                        {
+                                            "nodes": [
+                                                {
+                                                    "attrs": {
+                                                        "id": "00cqx",
+                                                        "styles": {
+                                                            "alignment": {
+                                                                "md": "utils/text/alignLeft",
+                                                                "xl": "utils/text/alignLeft",
+                                                                "xs": "utils/text/alignCenter"
+                                                            }
+                                                        }
+                                                    },
+                                                    "nodes": [
+                                                        {
+                                                            "text": "Built for multiple UI frameworks",
+                                                            "type": "text"
+                                                        }
+                                                    ],
+                                                    "type": "heading2"
+                                                },
+                                                {
+                                                    "attrs": {
+                                                        "styles": {
+                                                            "alignment": {
+                                                                "md": "utils/text/alignLeft",
+                                                                "xl": "utils/text/alignLeft",
+                                                                "xs": "utils/text/alignCenter"
+                                                            }
+                                                        }
+                                                    },
+                                                    "nodes": [
+                                                        {
+                                                            "text": "Comes with components for most popular UI frameworks like Vue, Knockout, Angular and React.",
+                                                            "type": "text"
+                                                        }
+                                                    ],
+                                                    "type": "paragraph"
+                                                }
+                                            ],
+                                            "type": "text-block"
+                                        },
+                                        {
+                                            "hyperlink": {
+                                                "targetKey": "pages/79f3c265-7eab-9418-e364-54a9bb1c85d3"
+                                            },
+                                            "label": "Learn more >",
+                                            "styles": {
+                                                "appearance": "components/button/default"
+                                            },
+                                            "type": "button"
+                                        }
+                                    ],
+                                    "role": "article",
+                                    "styles": {
+                                        "instance": {
+                                            "grid-cell": {
+                                                "md": {
+                                                    "alignment": {
+                                                        "horizontal": "start",
+                                                        "vertical": "center"
+                                                    },
+                                                    "position": {
+                                                        "col": 2,
+                                                        "row": 1
+                                                    },
+                                                    "span": {
+                                                        "cols": 1,
+                                                        "rows": 1
+                                                    }
+                                                },
+                                                "xs": {
+                                                    "alignment": {
+                                                        "horizontal": "center",
+                                                        "vertical": "center"
+                                                    },
+                                                    "position": {
+                                                        "col": 1,
+                                                        "row": 2
+                                                    },
+                                                    "span": {
+                                                        "cols": 1,
+                                                        "rows": 1
+                                                    }
+                                                }
+                                            },
+                                            "key": "ryhzpmabth",
+                                            "padding": {
+                                                "md": {
+                                                    "bottom": 15,
+                                                    "left": 15,
+                                                    "right": 15,
+                                                    "top": 15
+                                                },
+                                                "xs": {
+                                                    "bottom": 5,
+                                                    "left": 5,
+                                                    "right": 5,
+                                                    "top": 5
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "type": "grid-cell"
+                                },
+                                {
+                                    "nodes": [
+                                        {
+                                            "nodes": [
+                                                {
+                                                    "attrs": {
+                                                        "id": "b3NB4",
+                                                        "styles": {
+                                                            "alignment": {
+                                                                "md": "utils/text/alignLeft",
+                                                                "xl": "utils/text/alignLeft",
+                                                                "xs": "utils/text/alignCenter"
+                                                            }
+                                                        }
+                                                    },
+                                                    "nodes": [
+                                                        {
+                                                            "text": "Easy to get started",
+                                                            "type": "text"
+                                                        }
+                                                    ],
+                                                    "type": "heading2"
+                                                },
+                                                {
+                                                    "attrs": {
+                                                        "styles": {
+                                                            "alignment": {
+                                                                "md": "utils/text/alignLeft",
+                                                                "xl": "utils/text/alignLeft",
+                                                                "xs": "utils/text/alignCenter"
+                                                            }
+                                                        }
+                                                    },
+                                                    "nodes": [
+                                                        {
+                                                            "text": "Clone, install packages and launch!",
+                                                            "type": "text"
+                                                        }
+                                                    ],
+                                                    "type": "paragraph"
+                                                }
+                                            ],
+                                            "type": "text-block"
+                                        },
+                                        {
+                                            "hyperlink": {
+                                                "targetKey": "pages/e2d71b1d-6201-7d11-125d-b7118a65f13c"
+                                            },
+                                            "label": "Fork on GitHub >",
+                                            "styles": {
+                                                "appearance": "components/button/default"
+                                            },
+                                            "type": "button"
+                                        }
+                                    ],
+                                    "role": "article",
+                                    "styles": {
+                                        "instance": {
+                                            "grid-cell": {
+                                                "md": {
+                                                    "alignment": {
+                                                        "horizontal": "start",
+                                                        "vertical": "center"
+                                                    },
+                                                    "position": {
+                                                        "col": 1,
+                                                        "row": 2
+                                                    },
+                                                    "span": {
+                                                        "cols": 1,
+                                                        "rows": 1
+                                                    }
+                                                },
+                                                "xs": {
+                                                    "alignment": {
+                                                        "horizontal": "center",
+                                                        "vertical": "center"
+                                                    },
+                                                    "position": {
+                                                        "col": 1,
+                                                        "row": 4
+                                                    },
+                                                    "span": {
+                                                        "cols": 1,
+                                                        "rows": 1
+                                                    }
+                                                }
+                                            },
+                                            "key": "ohulvdflyg",
+                                            "padding": {
+                                                "md": {
+                                                    "bottom": 15,
+                                                    "left": 15,
+                                                    "right": 15,
+                                                    "top": 15
+                                                },
+                                                "xs": {
+                                                    "bottom": 5,
+                                                    "left": 5,
+                                                    "right": 5,
+                                                    "top": 5
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "type": "grid-cell"
+                                },
+                                {
+                                    "nodes": [
+                                        {
+                                            "nodes": [
+                                                {
+                                                    "nodes": [
+                                                        {
+                                                            "text": "> git clone https://github.com/paperbits/paperbits-demo.git",
+                                                            "type": "text"
+                                                        },
+                                                        {
+                                                            "type": "break"
+                                                        },
+                                                        {
+                                                            "text": "> npm install",
+                                                            "type": "text"
+                                                        },
+                                                        {
+                                                            "type": "break"
+                                                        },
+                                                        {
+                                                            "text": "> npm start",
+                                                            "type": "text"
+                                                        }
+                                                    ],
+                                                    "type": "formatted"
+                                                }
+                                            ],
+                                            "type": "text-block"
+                                        }
+                                    ],
+                                    "role": "aside",
+                                    "styles": {
+                                        "instance": {
+                                            "grid-cell": {
+                                                "md": {
+                                                    "alignment": {
+                                                        "horizontal": "center",
+                                                        "vertical": "center"
+                                                    },
+                                                    "position": {
+                                                        "col": 2,
+                                                        "row": 2
+                                                    },
+                                                    "span": {
+                                                        "cols": 1,
+                                                        "rows": 1
+                                                    }
+                                                },
+                                                "xs": {
+                                                    "alignment": {
+                                                        "horizontal": "center",
+                                                        "vertical": "center"
+                                                    },
+                                                    "position": {
+                                                        "col": 1,
+                                                        "row": 3
+                                                    },
+                                                    "span": {
+                                                        "cols": 1,
+                                                        "rows": 1
+                                                    }
+                                                }
+                                            },
+                                            "key": "ooovolugyp",
+                                            "padding": {
+                                                "md": {
+                                                    "bottom": 15,
+                                                    "left": 15,
+                                                    "right": 15,
+                                                    "top": 15
+                                                },
+                                                "xs": {
+                                                    "bottom": 5,
+                                                    "left": 5,
+                                                    "right": 5,
+                                                    "top": 5
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "type": "grid-cell"
+                                }
+                            ],
+                            "styles": {
+                                "instance": {
+                                    "grid": {
+                                        "md": {
+                                            "cols": [
+                                                "1fr",
+                                                "1fr"
+                                            ],
+                                            "rows": [
+                                                "auto",
+                                                "auto"
+                                            ]
+                                        },
+                                        "xs": {
+                                            "cols": [
+                                                "1fr"
+                                            ],
+                                            "rows": [
+                                                "auto",
+                                                "auto",
+                                                "auto",
+                                                "auto"
+                                            ]
+                                        }
+                                    },
+                                    "key": "weysyxdcfc",
+                                    "margin": {
+                                        "md": {
+                                            "bottom": 15,
+                                            "top": 15
+                                        },
+                                        "xl": {
+                                            "bottom": 25,
+                                            "top": 25
+                                        },
+                                        "xs": {
+                                            "bottom": 10,
+                                            "left": "auto",
+                                            "right": "auto",
+                                            "top": 10
+                                        }
+                                    },
+                                    "size": {
+                                        "lg": {
+                                            "maxWidth": 960
+                                        },
+                                        "md": {
+                                            "maxWidth": 720
+                                        },
+                                        "sm": {
+                                            "maxWidth": 540
+                                        },
+                                        "xl": {
+                                            "maxWidth": 1140
+                                        }
+                                    }
+                                }
+                            },
+                            "type": "grid"
+                        }
+                    ],
+                    "type": "layout-section"
+                }
+            ],
+            "type": "page"
+        },
         "new-email-template": {
             "nodes": [
                 {
@@ -12621,148 +14011,220 @@
     ],
     "pages": {
         "0bf536c4-ed99-7251-b993-67eaa4053efc": {
-            "contentKey": "files/0bf536c4-ed99-7251-b993-67eaa4053efc",
-            "description": "",
             "key": "pages/0bf536c4-ed99-7251-b993-67eaa4053efc",
-            "keywords": "",
-            "permalink": "/wiki/forms",
-            "title": "Wiki: Forms module"
+            "locales": {
+                "en-us": {
+                    "contentKey": "files/0bf536c4-ed99-7251-b993-67eaa4053efc",
+                    "description": "",
+                    "keywords": "",
+                    "permalink": "/wiki/forms",
+                    "title": "Wiki: Forms module"
+                }
+            }
         },
         "0ddd696f-4628-ea43-9e4e-844bd7ed9f9b": {
-            "contentKey": "files/0ddd696f-4628-ea43-9e4e-844bd7ed9f9b",
-            "description": "",
             "key": "pages/0ddd696f-4628-ea43-9e4e-844bd7ed9f9b",
-            "keywords": "",
-            "permalink": "/blog",
-            "title": "Blog"
+            "locales": {
+                "en-us": {
+                    "contentKey": "files/0ddd696f-4628-ea43-9e4e-844bd7ed9f9b",
+                    "description": "",
+                    "keywords": "",
+                    "permalink": "/blog",
+                    "title": "Blog"
+                }
+            }
         },
         "0ec6f480-9518-c546-365a-3bf3af1361f0": {
-            "contentKey": "files/0ec6f480-9518-c546-365a-3bf3af1361f0",
-            "description": "",
             "key": "pages/0ec6f480-9518-c546-365a-3bf3af1361f0",
-            "keywords": "",
-            "permalink": "/wiki/styles",
-            "title": "Wiki: Styles module"
+            "locales": {
+                "en-us": {
+                    "contentKey": "files/0ec6f480-9518-c546-365a-3bf3af1361f0",
+                    "description": "",
+                    "keywords": "",
+                    "permalink": "/wiki/styles",
+                    "title": "Wiki: Styles module"
+                }
+            }
         },
         "12543e9a-04d4-ab6f-3348-185aa197fc90": {
-            "contentKey": "files/12543e9a-04d4-ab6f-3348-185aa197fc90",
-            "description": "",
             "key": "pages/12543e9a-04d4-ab6f-3348-185aa197fc90",
-            "keywords": "",
-            "permalink": "/blog/azure-api-management",
-            "title": "Blog: Azure API Management"
+            "locales": {
+                "en-us": {
+                    "contentKey": "files/12543e9a-04d4-ab6f-3348-185aa197fc90",
+                    "description": "",
+                    "keywords": "",
+                    "permalink": "/blog/azure-api-management",
+                    "title": "Blog: Azure API Management"
+                }
+            }
         },
         "22ca5736-a296-d61d-6bc2-4f2d819824dd": {
-            "contentKey": "files/22ca5736-a296-d61d-6bc2-4f2d819824dd",
-            "description": "",
             "key": "pages/22ca5736-a296-d61d-6bc2-4f2d819824dd",
-            "keywords": "",
-            "permalink": "/404",
-            "title": "404"
+            "locales": {
+                "en-us": {
+                    "contentKey": "files/22ca5736-a296-d61d-6bc2-4f2d819824dd",
+                    "description": "",
+                    "keywords": "",
+                    "permalink": "/404",
+                    "title": "404"
+                }
+            }
         },
         "2996ae8f-0f09-3699-b34d-b1a3c77deebe": {
-            "contentKey": "files/2996ae8f-0f09-3699-b34d-b1a3c77deebe",
-            "description": "",
             "key": "pages/2996ae8f-0f09-3699-b34d-b1a3c77deebe",
-            "keywords": "",
-            "permalink": "/blog/so-you-need-a-form",
-            "title": "Blog: So, you need a form?"
+            "locales": {
+                "en-us": {
+                    "contentKey": "files/2996ae8f-0f09-3699-b34d-b1a3c77deebe",
+                    "description": "",
+                    "keywords": "",
+                    "permalink": "/blog/so-you-need-a-form",
+                    "title": "Blog: So, you need a form?"
+                }
+            }
         },
         "2a2e31dc-6624-153b-8466-23595f56f40e": {
-            "contentKey": "files/2a2e31dc-6624-153b-8466-23595f56f40e",
-            "description": "Stay tuned for Paperbits updates. See what you can do with Paperbits.",
             "key": "pages/2a2e31dc-6624-153b-8466-23595f56f40e",
-            "keywords": "",
-            "permalink": "/blog/meet-paperbits",
-            "title": "Blog: Meet Paperbits!"
+            "locales": {
+                "en-us": {
+                    "contentKey": "files/2a2e31dc-6624-153b-8466-23595f56f40e",
+                    "description": "Stay tuned for Paperbits updates. See what you can do with Paperbits.",
+                    "keywords": "",
+                    "permalink": "/blog/meet-paperbits",
+                    "title": "Blog: Meet Paperbits!"
+                }
+            }
         },
         "55540044-1473-db43-f130-6228f75d572b": {
-            "contentKey": "files/55540044-1473-db43-f130-6228f75d572b",
-            "description": "",
             "key": "pages/55540044-1473-db43-f130-6228f75d572b",
-            "keywords": "",
-            "permalink": "/features",
-            "title": "Features"
+            "locales": {
+                "en-us": {
+                    "contentKey": "files/55540044-1473-db43-f130-6228f75d572b",
+                    "description": "",
+                    "keywords": "",
+                    "permalink": "/features",
+                    "title": "Features"
+                }
+            }
         },
         "657245f0-1eae-4145-b90a-8463f00607be": {
-            "contentKey": "files/657245f0-1eae-4145-b90a-8463f00607be",
-            "description": "",
             "key": "pages/657245f0-1eae-4145-b90a-8463f00607be",
-            "keywords": "",
-            "permalink": "/subscription/confirmed",
-            "title": "Subscription - Email confirmed"
+            "locales": {
+                "en-us": {
+                    "contentKey": "files/657245f0-1eae-4145-b90a-8463f00607be",
+                    "description": "",
+                    "keywords": "",
+                    "permalink": "/subscription/confirmed",
+                    "title": "Subscription - Email confirmed"
+                }
+            }
         },
         "79f3c265-7eab-9418-e364-54a9bb1c85d3": {
-            "contentKey": "files/79f3c265-7eab-9418-e364-54a9bb1c85d3",
-            "description": "Learn about key concepts used to design Paperbits and what makes it a unique product.",
             "key": "pages/79f3c265-7eab-9418-e364-54a9bb1c85d3",
-            "keywords": "",
-            "permalink": "/blog/key-concepts",
-            "title": "Blog: Key concepts"
+            "locales": {
+                "en-us": {
+                    "contentKey": "files/79f3c265-7eab-9418-e364-54a9bb1c85d3",
+                    "description": "Learn about key concepts used to design Paperbits and what makes it a unique product.",
+                    "keywords": "",
+                    "permalink": "/blog/key-concepts",
+                    "title": "Blog: Key concepts"
+                }
+            }
         },
         "918b7e2e-1b0a-5ab8-753b-7be6a451239c": {
-            "contentKey": "files/918b7e2e-1b0a-5ab8-753b-7be6a451239c",
-            "description": "",
             "key": "pages/918b7e2e-1b0a-5ab8-753b-7be6a451239c",
-            "keywords": "",
-            "permalink": "/wiki/build-system",
-            "title": "Wiki: Build system"
+            "locales": {
+                "en-us": {
+                    "contentKey": "files/918b7e2e-1b0a-5ab8-753b-7be6a451239c",
+                    "description": "",
+                    "keywords": "",
+                    "permalink": "/wiki/build-system",
+                    "title": "Wiki: Build system"
+                }
+            }
         },
         "96c7404e-7c0c-356f-e17f-453b923fb3aa": {
-            "contentKey": "files/96c7404e-7c0c-356f-e17f-453b923fb3aa",
-            "description": "",
             "key": "pages/96c7404e-7c0c-356f-e17f-453b923fb3aa",
-            "keywords": "",
-            "permalink": "/license/commercial",
-            "title": "License: Commercial"
+            "locales": {
+                "en-us": {
+                    "contentKey": "files/96c7404e-7c0c-356f-e17f-453b923fb3aa",
+                    "description": "",
+                    "keywords": "",
+                    "permalink": "/license/commercial",
+                    "title": "License: Commercial"
+                }
+            }
         },
         "9cc8dbff-b351-b878-214d-3a1357c81eb6": {
-            "contentKey": "files/9cc8dbff-b351-b878-214d-3a1357c81eb6",
-            "description": "",
             "key": "pages/9cc8dbff-b351-b878-214d-3a1357c81eb6",
-            "keywords": "",
-            "permalink": "/license/mit",
-            "title": "License: MIT"
+            "locales": {
+                "en-us": {
+                    "contentKey": "files/9cc8dbff-b351-b878-214d-3a1357c81eb6",
+                    "description": "",
+                    "keywords": "",
+                    "permalink": "/license/mit",
+                    "title": "License: MIT"
+                }
+            }
         },
         "9ee6da1b-9c67-a5b2-fb69-17dc5859f52c": {
-            "contentKey": "files/9ee6da1b-9c67-a5b2-fb69-17dc5859f52c",
-            "description": "",
             "key": "pages/9ee6da1b-9c67-a5b2-fb69-17dc5859f52c",
-            "keywords": "",
-            "permalink": "/privacy",
-            "title": "Privacy"
+            "locales": {
+                "en-us": {
+                    "contentKey": "files/9ee6da1b-9c67-a5b2-fb69-17dc5859f52c",
+                    "description": "",
+                    "keywords": "",
+                    "permalink": "/privacy",
+                    "title": "Privacy"
+                }
+            }
         },
         "a4095a4c-5147-1596-23b4-bd77a6c5f6dc": {
-            "contentKey": "files/a4095a4c-5147-1596-23b4-bd77a6c5f6dc",
-            "description": "",
             "key": "pages/a4095a4c-5147-1596-23b4-bd77a6c5f6dc",
-            "keywords": "",
-            "permalink": "/about",
-            "title": "About"
+            "locales": {
+                "en-us": {
+                    "contentKey": "files/a4095a4c-5147-1596-23b4-bd77a6c5f6dc",
+                    "description": "",
+                    "keywords": "",
+                    "permalink": "/about",
+                    "title": "About"
+                }
+            }
         },
         "c0cf6948-9b14-da58-07f4-db996d395c8d": {
-            "contentKey": "files/c0cf6948-9b14-da58-07f4-db996d395c8d",
-            "description": "",
             "key": "pages/c0cf6948-9b14-da58-07f4-db996d395c8d",
-            "keywords": "",
-            "permalink": "/subscription/confirm",
-            "title": "Subscription - Confirm email"
+            "locales": {
+                "en-us": {
+                    "contentKey": "files/c0cf6948-9b14-da58-07f4-db996d395c8d",
+                    "description": "",
+                    "keywords": "",
+                    "permalink": "/subscription/confirm",
+                    "title": "Subscription - Confirm email"
+                }
+            }
         },
         "c89c7b69-9029-663b-8325-37b53b12bdac": {
-            "contentKey": "files/c89c7b69-9029-663b-8325-37b53b12bdac",
-            "description": "",
             "key": "pages/c89c7b69-9029-663b-8325-37b53b12bdac",
-            "keywords": "",
-            "permalink": "/contibuting",
-            "title": "Contributor guide"
+            "locales": {
+                "en-us": {
+                    "contentKey": "files/c89c7b69-9029-663b-8325-37b53b12bdac",
+                    "description": "",
+                    "keywords": "",
+                    "permalink": "/contibuting",
+                    "title": "Contributor guide"
+                }
+            }
         },
         "dbdf346e-867f-0e23-0117-450584eacaba": {
-            "contentKey": "files/dbdf346e-867f-0e23-0117-450584eacaba",
-            "description": "",
             "key": "pages/dbdf346e-867f-0e23-0117-450584eacaba",
-            "keywords": "",
-            "permalink": "/wiki/widget-anatomy",
-            "title": "Wiki: Widget anatomy"
+            "locales": {
+                "en-us": {
+                    "contentKey": "files/dbdf346e-867f-0e23-0117-450584eacaba",
+                    "description": "",
+                    "keywords": "",
+                    "permalink": "/wiki/widget-anatomy",
+                    "title": "Wiki: Widget anatomy"
+                }
+            }
         },
         "e0987ca1-f458-b546-7697-7be594b35583": {
             "key": "pages/e0987ca1-f458-b546-7697-7be594b35583",
@@ -12775,7 +14237,7 @@
                     "title": "Home"
                 },
                 "ru-ru": {
-                    "contentKey": "files/ffdcdb4e-bad4-dfd7-3e9c-c0b2a917b66a",
+                    "contentKey": "files/ffdcdb4e-bad4-dfd7-3e9c-c0b2a917b6RU",
                     "description": "",
                     "keywords": "",
                     "permalink": "/",
@@ -12784,12 +14246,16 @@
             }
         },
         "e2d71b1d-6201-7d11-125d-b7118a65f13c": {
-            "contentKey": "files/e2d71b1d-6201-7d11-125d-b7118a65f13c",
-            "description": "",
             "key": "pages/e2d71b1d-6201-7d11-125d-b7118a65f13c",
-            "keywords": "",
-            "permalink": "/wiki/getting-started",
-            "title": "Wiki: Getting started"
+            "locales": {
+                "en-us": {
+                    "contentKey": "files/e2d71b1d-6201-7d11-125d-b7118a65f13c",
+                    "description": "",
+                    "keywords": "",
+                    "permalink": "/wiki/getting-started",
+                    "title": "Wiki: Getting started"
+                }
+            }
         }
     },
     "settings": {

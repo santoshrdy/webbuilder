@@ -159,18 +159,27 @@ export class StaticObjectStorage implements IObjectStorage {
                 });
             }
 
+            collection.forEach(item => {
+                const segments = item.key.split("/");
+                const key = segments[1];
+
+                Objects.setValue(key, searchResultObject, item);
+                Objects.cleanupObject(item); // Ensure all "undefined" are cleaned up
+            });
+
             if (query.selecting) {
                 collection = collection.map(x => Objects.getObjectAt(query.selecting, x));
             }
         }
+        else {
+            collection.forEach(item => {
+                const segments = item.key.split("/");
+                const key = segments[1];
 
-        collection.forEach(item => {
-            const segments = item.key.split("/");
-            const key = segments[1];
-
-            Objects.setValue(key, searchResultObject, item);
-            Objects.cleanupObject(item); // Ensure all "undefined" are cleaned up
-        });
+                Objects.setValue(key, searchResultObject, item);
+                Objects.cleanupObject(item); // Ensure all "undefined" are cleaned up
+            });
+        }
 
         return searchResultObject;
     }
