@@ -159,9 +159,9 @@ export class StaticObjectStorage implements IObjectStorage {
                 });
             }
 
-            // if (query.select) {
-
-            // }
+            if (query.selecting) {
+                collection = collection.map(x => Objects.getObjectAt(query.selecting, x));
+            }
         }
 
         collection.forEach(item => {
