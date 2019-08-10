@@ -113,7 +113,8 @@ export class StaticObjectStorage implements IObjectStorage {
                     let meetsCriteria = true;
 
                     for (const filter of query.filters) {
-                        const left = <string>Objects.getObjectAt(filter.left, x);
+                        const value = <string>Objects.getObjectAt(filter.left, x);
+                        const left = value ? value.toUpperCase() : null;
                         const right = filter.right.toUpperCase();
                         const operator = filter.operator;
 
