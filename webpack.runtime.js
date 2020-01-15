@@ -1,19 +1,32 @@
 const path = require("path");
-const CopyWebpackPlugin = require("copy-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
+const TerserPlugin = require("terser-webpack-plugin");
 
-const selectedTheme = "paperbits";
 
 module.exports = {
     mode: "development",
     target: "web",
     entry: {
-        "assets/styles/theme": [`./src/themes/${selectedTheme}/styles/styles.scss`],
-        "assets/scripts/theme": ["./src/startup.runtime.ts"]
+        "scripts/theme": ["./src/startup.runtime.ts"],
+        "styles/theme": [`./src/themes/website/styles/styles.scss`]
     },
     output: {
         filename: "./[name].js",
         path: path.resolve(__dirname, "dist"),
+    },
+    optimization: {
+        minimizer: [
+            new TerserPlugin({
+                sourceMap: false,
+                terserOptions: {
+                    mangle: false,
+                    output: {
+                        comments: false,
+                    }
+                }
+            })
+        ]
     },
     module: {
         rules: [
@@ -21,7 +34,7 @@ module.exports = {
                 test: /\.scss$/,
                 use: [
                     MiniCssExtractPlugin.loader,
-                    { loader: "css-loader" },
+                    { loader: "css-loader", options: { url: false } },
                     { loader: "postcss-loader" },
                     { loader: "sass-loader" }
                 ]
@@ -41,6 +54,10 @@ module.exports = {
                     limit: 10000
                 }
             },
+            // {
+            //     test: /\.vue$/,
+            //     loader: 'vue-loader'
+            // }
             {
                 test: /\.liquid$/,
                 loader: "raw-loader"
@@ -50,10 +67,15 @@ module.exports = {
     plugins: [
         new MiniCssExtractPlugin({ filename: "[name].css", chunkFilename: "[id].css" }),
         new CopyWebpackPlugin([
-            { from: `./src/config.runtime.json`, to: `./assets/config.json` }
+            { from: `./src/config.runtime.json`, to: `config.json` },
+            { from: `./src/themes/website/styles/fonts`, to: "styles/fonts" },
+            { from: `./src/themes/website/assets` }
         ])
     ],
     resolve: {
+        // alias: {
+        //     'vue$': 'vue/dist/vue.esm.js'
+        // },
         extensions: [".ts", ".tsx", ".js", ".jsx", ".html", ".scss"]
     }
 };

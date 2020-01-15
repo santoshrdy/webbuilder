@@ -113,9 +113,17 @@ export class StaticObjectStorage implements IObjectStorage {
                     let meetsCriteria = true;
 
                     for (const filter of query.filters) {
-                        const value = <string>Objects.getObjectAt(filter.left, x);
-                        const left = value ? value.toUpperCase() : null;
-                        const right = filter.right.toUpperCase();
+                        let left = x[filter.left];
+                        let right = filter.right;
+
+                        if (typeof left === "string") {
+                            left = left.toUpperCase();
+                        }
+
+                        if (typeof right === "string") {
+                            right = right.toUpperCase();
+                        }
+
                         const operator = filter.operator;
 
                         switch (operator) {
@@ -132,7 +140,7 @@ export class StaticObjectStorage implements IObjectStorage {
                                 break;
 
                             default:
-                                throw new Error("Cannot translate operator into query.");
+                                throw new Error("Cannot translate operator into Firebase Realtime Database query.");
                         }
                     }
 
@@ -159,41 +167,81 @@ export class StaticObjectStorage implements IObjectStorage {
                     return 0;
                 });
             }
-
-            collection.forEach(item => {
-                const segments = item.key.split("/");
-                const key = segments[1];
-
-                Objects.setValue(key, searchResultObject, item);
-                Objects.cleanupObject(item); // Ensure all "undefined" are cleaned up
-            });
-
-            if (query.selecting) {
-                collection = collection.map(x => Objects.getObjectAt(query.selecting, x));
-            }
         }
-        else {
-            collection.forEach(item => {
-                const segments = item.key.split("/");
-                const key = segments[1];
 
-                Objects.setValue(key, searchResultObject, item);
-                Objects.cleanupObject(item); // Ensure all "undefined" are cleaned up
-            });
-        }
+        collection.forEach(item => {
+            const segments = item.key.split("/");
+            const key = segments[1];
+
+            Objects.setValue(key, searchResultObject, item);
+            Objects.cleanupObject(item); // Ensure all "undefined" are cleaned up
+        });
 
         return searchResultObject;
     }
 
     public async saveChanges(delta: Object): Promise<void> {
+        const saveTasks = [];
+        const keys = [];
+
+        Object.keys(delta).map(key => {
+            const firstLevelObject = delta[key];
+
+            Object.keys(firstLevelObject).forEach(subkey => {
+                keys.push(`${key}/${subkey}`);
+            });
+        });
+
+        keys.forEach(key => {
+            const changeObject = Objects.getObjectAt(key, delta);
+
+            if (changeObject) {
+                saveTasks.push(this.updateObject(key, changeObject));
+            }
+            else {
+                saveTasks.push(this.deleteObject(key));
+            }
+        });
+
+        await Promise.all(saveTasks);
+
         const state = JSON.stringify(this.storageDataObject);
         const stateBlob = new Blob([state], { type: "text/plain;charset=utf-8" });
-
+        
         FileSaver.saveAs(stateBlob, "demo.json");
 
         /* Uncomment to save changes in a separate file */
         // const changes = JSON.stringify(delta);
         // const deltaBlob = new Blob([changes], { type: "text/plain;charset=utf-8" });
         // FileSaver.saveAs(deltaBlob, "changes.json");
+    }
+
+    public async loadData(): Promise<object> {
+        return new Promise<object>((resolve, reject) => {
+            const input: HTMLInputElement = document.createElement("input");
+            input.type = "file";
+
+            input.onchange = e => { 
+
+                const target: HTMLInputElement = <HTMLInputElement> e.target;
+                const file = target.files[0]; 
+                if (!file) {
+                    resolve(undefined);
+                }
+
+                const reader = new FileReader();
+                reader.readAsText(file, "UTF-8");
+
+                reader.onload = readerEvent => {
+                    const contentString = readerEvent.target.result.toString();
+                    const dataObject = contentString ? JSON.parse(contentString) : undefined;
+                    this.storageDataObject = dataObject || this.storageDataObject;
+                    resolve(dataObject);
+                };
+
+            };
+
+            input.click();            
+        });
     }
 }
