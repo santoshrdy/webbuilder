@@ -15,7 +15,16 @@ module.exports = merge(designerConfig, {
                         comments: false,
                     }
                 }
-            })
-        ]
+            }),
+        ],
+        splitChunks: {
+            cacheGroups: {
+                vendor: {
+                    test: /[\\/]node_modules[\\/]/,
+                    name: "editors/scripts/vendor",
+                    chunks: "initial"
+                }
+            }
+        }
     }
 });

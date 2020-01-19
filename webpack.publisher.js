@@ -81,5 +81,6 @@ const publisherConfig = {
 };
 
 runtimeConfig.output.path = path.resolve(__dirname, "dist/publisher/assets");
+runtimeConfig.mode = "production";
 
 module.exports = [publisherConfig, runtimeConfig];
