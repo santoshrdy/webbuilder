@@ -7,9 +7,8 @@
  */
 
 import "./polyfills";
-import { InversifyInjector } from "@paperbits/common/injection";
-import { OfflineModule } from "@paperbits/common/offline/offline.module";
+// import { InversifyInjector } from "@paperbits/common/injection";
+import "@paperbits/common/offline/offlineServiceWorker";
 
-const injector = new InversifyInjector();
-injector.bindModule(new OfflineModule());
-injector.resolve("autostart");
+// const injector = new InversifyInjector();
+// injector.resolve("autostart");
