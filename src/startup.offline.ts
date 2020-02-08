@@ -15,9 +15,6 @@
 
 
 
-
-
-
 "use strict";
 
 console.log("WORKER: executing.");
@@ -43,7 +40,7 @@ var offlineFundamentals = [
    You can use this event to prepare the service worker to be able to serve
    files while visitors are offline.
 */
-self.addEventListener("install", function (event: any) {
+self.addEventListener("install", (event: any) => {
     console.log("WORKER: install event in progress.");
     /* Using event.waitUntil(p) blocks the installation process on the provided
        promise. If the promise is rejected, the service worker won't be installed.
@@ -58,14 +55,14 @@ self.addEventListener("install", function (event: any) {
                one fell swoop later, when phasing out an older service worker.
             */
             .open(version + "fundamentals")
-            .then(function (cache) {
+            .then((cache) => {
                 /* After the cache is opened, we can fill it with the offline fundamentals.
                    The method below will add all resources in `offlineFundamentals` to the
                    cache, after making requests for them.
                 */
                 return cache.addAll(offlineFundamentals);
             })
-            .then(function () {
+            .then(() => {
                 console.log("WORKER: install completed");
             })
     );
@@ -76,7 +73,7 @@ self.addEventListener("install", function (event: any) {
    comprehends even the request for the HTML page on first load, as well as JS and
    CSS resources, fonts, any images, etc.
 */
-self.addEventListener("fetch", function (event: any) {
+self.addEventListener("fetch", (event: any) => {
     console.log("WORKER: fetch event in progress.");
 
     /* We should only cache GET requests, and deal with the rest of method in the
@@ -100,7 +97,7 @@ self.addEventListener("fetch", function (event: any) {
                to the fetch request.
             */
             .match(event.request)
-            .then(function (cached) {
+            .then((cached) => {
                 /* Even if the response is in our cache, we go to the network as well.
                    This pattern is known for producing "eventually fresh" responses,
                    where we return cached responses immediately, and meanwhile pull
@@ -109,7 +106,7 @@ self.addEventListener("fetch", function (event: any) {
                    Read more:
                    https://ponyfoo.com/articles/progressive-networking-serviceworker
                 */
-                var networked = fetch(event.request)
+                const networked = fetch(event.request)
                     // We handle the network request with success and failure scenarios.
                     .then(fetchedFromNetwork, unableToResolve)
                     // We should catch errors on the fetchedFromNetwork handler as well.
@@ -125,21 +122,21 @@ self.addEventListener("fetch", function (event: any) {
                     /* We copy the response before replying to the network request.
                        This is the response that will be stored on the ServiceWorker cache.
                     */
-                    var cacheCopy = response.clone();
+                    const cacheCopy = response.clone();
 
                     console.log("WORKER: fetch response from network.", event.request.url);
 
                     caches
                         // We open a cache to store the response for this request.
                         .open(version + "pages")
-                        .then(function add(cache) {
+                        .then((cache) => {
                             /* We store the response for this request. It'll later become
                                available to caches.match(event.request) calls, when looking
                                for cached responses.
                             */
                             return cache.put(event.request, cacheCopy);
                         })
-                        .then(function () {
+                        .then(() => {
                             console.log("WORKER: fetch response stored in cache.", event.request.url);
                         });
 
@@ -187,7 +184,7 @@ self.addEventListener("fetch", function (event: any) {
    installing.
 */
 
-self.addEventListener("activate", function (event: any) {
+self.addEventListener("activate", (event: any) => {
     /* Just like with the install event, event.waitUntil blocks activate on a promise.
        Activation will fail unless the promise is fulfilled.
     */
@@ -199,15 +196,15 @@ self.addEventListener("activate", function (event: any) {
                cache keys.
             */
             .keys()
-            .then(function (keys) {
+            .then((keys) => {
                 // We return a promise that settles when all outdated caches are deleted.
                 return Promise.all(
                     keys
-                        .filter(function (key) {
+                        .filter((key) => {
                             // Filter by keys that don't start with the latest version prefix.
                             return !key.startsWith(version);
                         })
-                        .map(function (key) {
+                        .map((key) => {
                             /* Return a promise that's fulfilled
                                when each outdated cache is deleted.
                             */
@@ -215,7 +212,7 @@ self.addEventListener("activate", function (event: any) {
                         })
                 );
             })
-            .then(function () {
+            .then(() => {
                 console.log("WORKER: activate completed.");
             })
     );
