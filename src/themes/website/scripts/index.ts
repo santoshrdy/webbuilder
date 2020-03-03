@@ -7,3 +7,4 @@
  */
 
 import "./collapsibles";
+import "./intersections";
