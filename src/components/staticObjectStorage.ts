@@ -113,7 +113,7 @@ export class StaticObjectStorage implements IObjectStorage {
                     let meetsCriteria = true;
 
                     for (const filter of query.filters) {
-                        let left = x[filter.left];
+                        let left = Objects.getObjectAt<any>(filter.left, x);
                         let right = filter.right;
 
                         if (typeof left === "string") {
@@ -207,7 +207,7 @@ export class StaticObjectStorage implements IObjectStorage {
 
         const state = JSON.stringify(this.storageDataObject);
         const stateBlob = new Blob([state], { type: "text/plain;charset=utf-8" });
-        
+
         FileSaver.saveAs(stateBlob, "demo.json");
 
         /* Uncomment to save changes in a separate file */
@@ -221,10 +221,10 @@ export class StaticObjectStorage implements IObjectStorage {
             const input: HTMLInputElement = document.createElement("input");
             input.type = "file";
 
-            input.onchange = e => { 
+            input.onchange = e => {
 
-                const target: HTMLInputElement = <HTMLInputElement> e.target;
-                const file = target.files[0]; 
+                const target: HTMLInputElement = <HTMLInputElement>e.target;
+                const file = target.files[0];
                 if (!file) {
                     resolve(undefined);
                 }
@@ -241,7 +241,7 @@ export class StaticObjectStorage implements IObjectStorage {
 
             };
 
-            input.click();            
+            input.click();
         });
     }
 }
