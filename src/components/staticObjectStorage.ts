@@ -18,24 +18,29 @@ import { Bag } from "@paperbits/common";
  * Static object storage for demo purposes. It stores all the uploaded blobs in memory.
  */
 export class StaticObjectStorage implements IObjectStorage {
+    private loadDataPromise: Promise<Object>;
     protected storageDataObject: Object;
     private splitter = "/";
 
     constructor(private readonly httpClient: HttpClient) { }
 
     protected async getData(): Promise<Object> {
-        if (!this.storageDataObject) {
+        if (this.loadDataPromise) {
+            return this.loadDataPromise;
+        }
+
+        this.loadDataPromise = new Promise<Object>(async (resolve) => {
             const response = await this.httpClient.send({
                 url: "/data/demo.json",
                 method: "GET"
             });
 
             this.storageDataObject = response.toObject();
-        }
 
-        return new Promise<Object>((resolve) => {
-            setImmediate(() => resolve(this.storageDataObject));
+            resolve(this.storageDataObject);
         });
+
+        return this.loadDataPromise;
     }
 
     public async addObject(path: string, dataObject: Object): Promise<void> {
