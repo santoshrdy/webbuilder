@@ -12026,10 +12026,6 @@
                                                     "alignment": {
                                                         "horizontal": "start",
                                                         "vertical": "center"
-                                                    },
-                                                    "overflow": {
-                                                        "horizontal": "auto",
-                                                        "vertical": "auto"
                                                     }
                                                 },
                                                 "md": {
@@ -12321,10 +12317,6 @@
                                                     "alignment": {
                                                         "horizontal": "start",
                                                         "vertical": "center"
-                                                    },
-                                                    "overflow": {
-                                                        "horizontal": "auto",
-                                                        "vertical": "auto"
                                                     }
                                                 },
                                                 "md": {
@@ -12602,10 +12594,6 @@
                                                     "alignment": {
                                                         "horizontal": "start",
                                                         "vertical": "center"
-                                                    },
-                                                    "overflow": {
-                                                        "horizontal": "auto",
-                                                        "vertical": "auto"
                                                     }
                                                 },
                                                 "md": {
@@ -12879,10 +12867,6 @@
                                                     "alignment": {
                                                         "horizontal": "start",
                                                         "vertical": "center"
-                                                    },
-                                                    "overflow": {
-                                                        "horizontal": "auto",
-                                                        "vertical": "auto"
                                                     }
                                                 },
                                                 "md": {
