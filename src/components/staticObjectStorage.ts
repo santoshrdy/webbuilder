@@ -110,6 +110,11 @@ export class StaticObjectStorage implements IObjectStorage {
         }
 
         const searchObj = Objects.getObjectAt(path, data);
+
+        if (!searchObj) {
+            return {};
+        }
+
         let collection = Object.values(searchObj);
 
         if (query) {
@@ -157,8 +162,8 @@ export class StaticObjectStorage implements IObjectStorage {
                 const property = query.orderingBy;
 
                 collection = collection.sort((x, y) => {
-                    const a = x[property].toUpperCase();
-                    const b = y[property].toUpperCase();
+                    const a = Objects.getObjectAt<any>(property, x);
+                    const b = Objects.getObjectAt<any>(property, y);
                     const modifier = query.orderDirection === OrderDirection.accending ? 1 : -1;
 
                     if (a > b) {
