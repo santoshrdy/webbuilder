@@ -126,6 +126,11 @@ export class StaticObjectStorage implements IObjectStorage {
                         let left = Objects.getObjectAt<any>(filter.left, x);
                         let right = filter.right;
 
+                        if (left === undefined && !!right) {
+                            meetsCriteria = false;
+                            continue;
+                        }
+
                         if (typeof left === "string") {
                             left = left.toUpperCase();
                         }
@@ -138,7 +143,7 @@ export class StaticObjectStorage implements IObjectStorage {
 
                         switch (operator) {
                             case Operator.contains:
-                                if (!left.contains(right)) {
+                                if (left && !left.contains(right)) {
                                     meetsCriteria = false;
                                 }
                                 break;
