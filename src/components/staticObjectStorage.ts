@@ -126,7 +126,7 @@ export class StaticObjectStorage implements IObjectStorage {
                         let left = Objects.getObjectAt<any>(filter.left, x);
                         let right = filter.right;
 
-                        if (left === undefined && !!right) {
+                        if (left === undefined) {
                             meetsCriteria = false;
                             continue;
                         }
