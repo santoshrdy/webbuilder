@@ -78,7 +78,6 @@ export class WaitlistRuntime {
     }
 
     @Watch("restaurantId")
-    @Watch("widgetType")
     public onRestaurantChange(): void {
         this.loadRestaurant();
     }
