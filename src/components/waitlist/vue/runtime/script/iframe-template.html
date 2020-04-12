@@ -1,0 +1,60 @@
+<div class="hostme-popup-waitlist__cnt" style="display: none">
+    <style>
+        #hostme-waitlist-preloading-cnt {
+            -webkit-transition: opacity .5s ease;
+            transition: opacity .5s ease;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+            z-index: 1;
+        }
+
+        #hostme-waitlist-preloading-cnt:after {
+            content: '';
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            display: inline-block;
+            top: 50%;
+            left: 50%;
+            margin-top: -30px;
+            margin-left: -30px;
+            pointer-events: none;
+            border-radius: 50%;
+            border-top: 2px solid transparent;
+            border-right: 2px solid #e16640;
+            border-bottom: 2px solid #e16640;
+            border-left: 2px solid #e16640;
+            animation: spin 0.75s infinite linear;
+        }
+
+        @keyframes spin {
+            from {
+                -webkit-transform: rotate(0deg);
+                -ms-transform: rotate(0deg);
+                -o-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+            to {
+                -webkit-transform: rotate(360deg);
+                -ms-transform: rotate(360deg);
+                -o-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+    </style>
+    <a class="j-hostme-close-waitlist-iframe hostme-popup-waitlist__close-btn" title="Close Waitlist">
+        <svg class="hostme-popup-waitlist__close-svg" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                  d="M15.292 0L7.999 7.293.707 0 0 .707 7.293 8 0 15.292l.707.707 7.292-7.292 7.293 7.292.707-.707L8.707 8 15.999.707z"/>
+        </svg>
+    </a>
+    <div id="hostme-waitlist-preloading-cnt"></div>
+    <iframe frameBorder="0" class="j-hostme-waitlist-iframe">
+        <p>Your browser does not support iframes.</p>
+    </iframe>
+</div>

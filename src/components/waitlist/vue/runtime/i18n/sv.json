@@ -1,0 +1,10 @@
+{
+  "AREA": "Varsomhelst",
+  "GET_IN_LINE_BUTTON": "Ställ dig i kön",
+  "LANG": "sv",
+  "PERSON": {
+    "person": "personer",
+    "persons": "personer",
+    "morePersons": "fler personer"
+  }
+}

@@ -1,0 +1,23 @@
+$small-screen: 580px; // custom device with
+$medium-screen: 768px;
+$big-screen: 900px;
+$large-screen: 1200px;
+// custom break's
+$desktop-screen: 1025px;
+
+$screen: 'only screen';
+$screen-only: '#{$screen} and (max-width:#{$small-screen - 1})';
+
+$small-up: '#{$screen} and (min-width:#{$small-screen})';
+$small-only: '#{$screen} and (min-width:#{$small-screen}) and (max-width:#{$medium-screen - 1})';
+$small-down: '#{$screen} and (max-width:#{$small-screen - 1})';
+
+$medium-up: '#{$screen} and (min-width:#{$medium-screen})';
+$medium-only: '#{$screen} and (min-width:#{$medium-screen}) and (max-width:#{$big-screen - 1})';
+$medium-down: '#{$screen} and (max-width:#{$medium-screen - 1})';
+
+$big-up: '#{$screen} and (min-width:#{$big-screen})';
+$large-up: '#{$screen} and (min-width:#{$large-screen})';
+
+$desktop-up: '#{$screen} and (min-width:#{$desktop-screen})';
+$desktop-down: '#{$screen} and (max-width:#{$desktop-screen - 1})';

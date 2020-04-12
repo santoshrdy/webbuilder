@@ -1,0 +1,10 @@
+{
+  "GET_IN_LINE_BUTTON": "Ponerse en línea",
+  "AREA": "En cualquier sitio",
+  "LANG": "es",
+  "PERSON": {
+    "person": "persona",
+    "persons": "personas",
+    "morePersons": "personas o más"
+  }
+}

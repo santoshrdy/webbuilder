@@ -54,10 +54,10 @@ module.exports = {
                     limit: 10000
                 }
             },
-            // {
-            //     test: /\.vue$/,
-            //     loader: 'vue-loader'
-            // }
+            {
+                test: /\.vue$/,
+                loader: 'vue-loader'
+            },
             {
                 test: /\.liquid$/,
                 loader: "raw-loader"
@@ -73,9 +73,9 @@ module.exports = {
         ])
     ],
     resolve: {
-        // alias: {
-        //     'vue$': 'vue/dist/vue.esm.js'
-        // },
+        alias: {
+            'vue$': 'vue/dist/vue.esm.js'
+        },
         extensions: [".ts", ".tsx", ".js", ".jsx", ".html", ".scss"]
     }
 };

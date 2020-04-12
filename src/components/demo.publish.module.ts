@@ -17,7 +17,7 @@ import { StaticSettingsProvider } from "./staticSettingsProvider";
 import { StaticRouter } from "./staticRouter";
 import { StaticRoleService } from "./staticRoleService";
 import { SearchPublishModule } from "@paperbits/core/search/search.publish.module";
-import { ClickCounterEditorModule } from "./click-counter/ko";
+import { WaitlistDesignModule } from "./waitlist/ko";
 
 
 export class DemoPublishModule implements IInjectorModule {
@@ -37,6 +37,6 @@ export class DemoPublishModule implements IInjectorModule {
         injector.bindInstance("settingsProvider", new StaticSettingsProvider(path.resolve(this.settingsPath)));
         injector.bindInstance("outputBlobStorage", new FileSystemBlobStorage(path.resolve(this.outputBasePath)));
         injector.bindModule(new SearchPublishModule());
-        injector.bindModule(new ClickCounterEditorModule());
+        injector.bindModule(new WaitlistDesignModule());
     }
 }

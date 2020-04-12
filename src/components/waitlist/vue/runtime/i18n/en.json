@@ -1,0 +1,19 @@
+{
+  "AREA": "Anywhere",
+  "GET_IN_LINE_BUTTON": "Get in line",
+  "LANG": "en",
+  "GUEST": {
+    "GUEST": "guest",
+    "GUESTS": "guests",
+    "MORE_GUESTS": "more guests"
+  },
+  "WAITLIST": "Waitlist",
+  "CURRENT_WAIT_TIME": "Current wait time",
+  "UNDER_FIVE_MINS": "Under 5 mins",
+  "NO_ONE_IN_WAITLIST": "No one is on the Waitlist. <br>When it gets busy, get in line here or on the Hostme app.",
+  "REST_CLOSED_TITLE": "Waitlist Closed",
+  "REST_CLOSED_INFO": "Use the Waitlist to get in line when the business opens.",
+  "NOT_AVAILABLE_NOW": "Sorry, today we do not accept guests using the internet waitlist. We will be glad to see you personally in our restaurant.",
+  "HORIZONTAL_WAITLIST_MSG": "Use the Waitlist to get in line.",
+  "HORIZONTAL_NO_ONE_IN_WAITLIST": "No one is on the Waitlist. When it gets busy, get in line here or on the Hostme app."
+}

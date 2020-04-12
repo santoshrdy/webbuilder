@@ -1,0 +1,29 @@
+$font: 'Open Sans', sans-serif;
+
+// fonts
+%f-btn {
+  font-size: 18px !important;
+  line-height: $btn-line-height !important;
+  font-family: $font !important;
+  font-weight: 300 !important;
+  color: $base-color;
+}
+
+%f-date-day {
+  font-size: 12px;
+  line-height: 26px;
+}
+
+%f-submit {
+  font-size: 24px;
+  line-height: $btn-line-height;
+
+  @media #{$big-up} {
+    font-size: 20px;
+  }
+}
+
+%f-date-head {
+  font-size: 12px;
+  text-transform: uppercase;
+}

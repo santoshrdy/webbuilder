@@ -1,0 +1,82 @@
+// GLOBAL MIXINS
+// Transition
+@mixin transition($prop...) {
+  transition-property: $prop;
+  transition-duration: $gl-trs-duration;
+  transition-timing-function: $gl-trs-function;
+}
+
+// Hide text
+@mixin squish-text {
+  font: 0/0 serif;
+  text-shadow: none;
+  color: transparent;
+}
+
+@mixin pos-align-transform {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin pos-align($size, $direction: both) {
+  position: absolute;
+
+  @if ($direction == y) {
+    top: 50%;
+    margin-top: - $size / 2;
+  }
+
+  @if ($direction == x) {
+    left: 50%;
+    margin-left: - $size / 2;
+  }
+
+  @if ($direction == both) {
+    top: 50%;
+    left: 50%;
+    margin: {
+      top: - $size / 2;
+      left: - $size / 2;
+    };
+  }
+}
+
+@mixin margin-x($value) {
+  margin: {
+    right: $value;
+    left: $value;
+  };
+}
+
+@mixin padding-x($value) {
+  padding: {
+    right: $value;
+    left: $value;
+  };
+}
+
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+@mixin grid-clearfix() {
+
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+// SPRITE, depends of spritesmith sprite.scss file
+@function sprite-width($sprite) {
+  @return nth($sprite, 5);
+}
+
+@function sprite-height($sprite) {
+  @return nth($sprite, 6);
+}
+

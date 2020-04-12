@@ -44,6 +44,10 @@ const designerConfig = {
             {
                 test: /\.liquid$/,
                 loader: "raw-loader"
+            },
+            {
+                test: /\.vue$/,
+                loader: 'vue-loader'
             }
         ]
     },
@@ -62,6 +66,9 @@ const designerConfig = {
         ])
     ],
     resolve: {
+        alias: {
+            'vue$': 'vue/dist/vue.esm.js'
+        },
         extensions: [".ts", ".tsx", ".js", ".jsx", ".html", ".scss"]
     }
 };

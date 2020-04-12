@@ -54,6 +54,7 @@
         "@paperbits/styles": "0.1.251",
         "@types/knockout.mapping": "^2.0.35",
         "@webcomponents/custom-elements": "^1.4.0",
+        "axios": "^0.19.2",
         "core-js": "^3.6.4",
         "cssom": "^0.4.4",
         "emitter": "0.0.5",
@@ -63,6 +64,9 @@
         "knockout.validation": "^2.0.4",
         "mime-types": "^2.1.26",
         "react": "^16.11.0",
-        "react-dom": "^16.11.0"
+        "react-dom": "^16.11.0",
+        "vue": "^2.6.11",
+        "vue-custom-element": "^3.2.14",
+        "vue-i18n": "^8.16.0"
     }
 }

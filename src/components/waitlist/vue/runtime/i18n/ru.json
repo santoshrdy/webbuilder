@@ -1,0 +1,10 @@
+{
+  "GET_IN_LINE_BUTTON": "Встать в очередь",
+  "AREA": "В любом месте",
+  "LANG": "ru",
+  "PERSON": {
+    "person": "гость",
+    "persons": "гостей",
+    "morePersons": "гостей и более"
+  }
+}

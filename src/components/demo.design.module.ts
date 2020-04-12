@@ -14,7 +14,7 @@ import { StaticObjectStorage } from "./staticObjectStorage";
 import { StaticBlobStorage } from "./staticBlobStorage";
 import { StaticRoleService } from "./staticRoleService";
 import { SearchDesignModule } from "@paperbits/core/search/search.design.module";
-import { ClickCounterEditorModule } from "./click-counter/ko/clickCounterEditor.module";
+import { WaitlistDesignModule } from "./waitlist/waitlist.design.module";
 
 
 export class DemoDesignModule implements IInjectorModule {
@@ -25,6 +25,6 @@ export class DemoDesignModule implements IInjectorModule {
         injector.bindSingleton("objectStorage", StaticObjectStorage);
         injector.bindSingleton("logger", ConsoleLogger);
         injector.bindModule(new SearchDesignModule());
-        injector.bindModule(new ClickCounterEditorModule());
+        injector.bindModule(new WaitlistDesignModule());
     }
 }

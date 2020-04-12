@@ -1,0 +1,44 @@
+// colors
+$base-color: #666;
+$white: #fff;
+$black: #222222;
+$black-2: #7f7f7f; // input border color
+$black-3: #1f2526; // input filled color
+$black-4: #2a2f30; // datepicker day
+$gray: #f4f4f4; // bg of main section
+$gray-2: #eee; // input bd colors
+$gray-3: #d6d6d6;
+$gray-4: #999999; // txt in footer
+$gray-5: #e5e5e5; // input border color
+$gray-6: #ccc; // datepicker old day
+$gray-7: #ddd; // select options
+$gray-8: #eaeaea; // checkbox border
+$red: red;
+$placeholder-color: rgba($black-3, .3);
+$modal-bg: rgba(#171919, .94);
+$disable-btn: #eee; // disable btn
+$btn-gray: #c9c3c0;
+$loader: #e8e8e8;
+
+$base-1-default: #e16640;
+$base-1: var(--color-base-1, #e16640); // btn warning
+$base-2: var(--color-base-1-lighten-10, #d35738); // btn warning on hover
+$base-1-lighten-10: var(--color-base-1-lighten-10, lighten($base-1-default, 10%));
+
+// transitions
+$gl-trs-duration: .3s;
+$gl-trs-function: ease;
+
+// btn
+$btn-height: 50px !global; // default btn height
+$btn-lg-height: 60px !global; // default btn large height
+$btn-line-height: 30px !global; // default btn line-height
+$main-color-5365: #225cb1; // theme color for rest 5365
+
+// Z-INDEX MANAGEMENT
+// -----------------------------------
+$z-layers: (
+        'hide': -1,
+        'zero': 0,
+        'default': 1,
+);
