@@ -14,7 +14,7 @@ import { UserService, BuiltInRoles } from "@paperbits/common/user";
  */
 export class StaticUserService implements UserService {
     public async getUserName(): Promise<string> {
-        return null;
+        return "Jane Doe";
     }
 
     public async getUserPhotoUrl(): Promise<string> {
