@@ -25,13 +25,12 @@ h2 {
 .toolbox {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     padding: 7px;
     z-index: $z-index-base;
     max-height: calc(100% - 40px);
 
     @include surface();
-    @include animation-fadein(.3s);
+    @include animation-fadein(0.3s);
 
     &.toolbox-horizontal {
         flex-direction: row;
@@ -43,12 +42,20 @@ h2 {
 
     &.toolbox-position-left {
         left: 20px;
+        max-width: calc(100%-40px);
     }
 
     &.toolbox-position-left-bottom {
         position: fixed;
         bottom: 20px;
         left: 20px;
+        flex-direction: row;
+    }
+
+    &.toolbox-position-right-top {
+        position: fixed;
+        top: 20px;
+        right: 20px;
         flex-direction: row;
     }
 
@@ -105,18 +112,24 @@ h2 {
         a {
             display: inline-block;
             height: $toolbox-btn-size;
-            min-width: $toolbox-btn-size;
             line-height: $toolbox-btn-size;
             background-size: cover;
             outline: none;
             color: $color-base;
             text-decoration: none;
             width: 100%;
+            padding-left: 12px;
+            padding-right: 12px;
             @include tabable();
         }
 
         &[disabled] {
             opacity: 0.2;
+        }
+
+        .toolbox-btn-addon {
+            width: 15px;
+            left: 3px;
         }
     }
 
@@ -216,6 +229,13 @@ h2 {
     }
 }
 
+.balloon {
+    .toolbox {
+        padding: 0;
+        box-shadow: none;
+    }
+}
+
 .editor {
     padding: 10px;
     flex: 1;
@@ -225,6 +245,10 @@ h2 {
 
     .flex-row {
         flex-wrap: wrap;
+    }
+
+    h1 {
+        margin: 3px 0;
     }
 }
 

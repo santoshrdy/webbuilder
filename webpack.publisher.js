@@ -2,12 +2,11 @@ const path = require("path");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const CleanWebpackPlugin = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const TerserPlugin = require("terser-webpack-plugin");
 const runtimeConfig = require("./webpack.runtime");
 
 
 const publisherConfig = {
-    mode: "development",
+    mode: "none",
     target: "node",
     node: {
         __dirname: false,
@@ -17,17 +16,7 @@ const publisherConfig = {
         "index": ["./src/startup.publish.ts"]
     },
     optimization: {
-        minimizer: [
-            new TerserPlugin({
-                sourceMap: false,
-                terserOptions: {
-                    mangle: false,
-                    output: {
-                        comments: false,
-                    }
-                }
-            })
-        ]
+        minimize: false
     },
     output: {
         filename: "./[name].js",
@@ -55,7 +44,14 @@ const publisherConfig = {
             },
             {
                 test: /\.html$/,
-                loader: "html-loader?exportAsEs6Default"
+                loader: "html-loader",
+                options: {
+                    esModule: true,
+                    minimize: {
+                        removeComments: false,
+                        collapseWhitespace: false
+                    }
+                }
             },
             {
                 test: /\.(png|woff|woff2|eot|ttf|svg)$/,
@@ -73,16 +69,16 @@ const publisherConfig = {
     plugins: [
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({ filename: "[name].css", chunkFilename: "[id].css" }),
-        new CopyWebpackPlugin([
-            { from: `./src/data/demo.json`, to: `./data/demo.json` },
-            { from: `./src/config.publish.json`, to: `config.json` }
-        ])
+        new CopyWebpackPlugin({
+            patterns: [
+                { from: `./src/data/demo.json`, to: `./data/demo.json` },
+                { from: `./src/config.publish.json`, to: `config.json` }
+            ]
+        })
     ],
     resolve: {
         extensions: [".ts", ".tsx", ".js", ".jsx", ".html", ".scss"]
     }
 };
 
-runtimeConfig.output.path = path.resolve(__dirname, "dist/publisher/assets");
-
-module.exports = [publisherConfig, runtimeConfig];
+module.exports = [publisherConfig, runtimeConfig(false)];

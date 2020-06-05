@@ -1,9 +1,10 @@
 const webpack = require("webpack");
 const merge = require("webpack-merge");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 const designerConfig = require("./webpack.designer.js");
 
 
-module.exports = merge(designerConfig, {
+const developmentConfig = {
     mode: "development",
     devtool: "inline-source-map",
     devServer: {
@@ -11,6 +12,15 @@ module.exports = merge(designerConfig, {
         historyApiFallback: true
     },
     plugins: [
-        new webpack.HotModuleReplacementPlugin()
+        new webpack.HotModuleReplacementPlugin(),
+        new CopyWebpackPlugin({
+            patterns: [
+                { from: `./src/config.design.json`, to: `./config.json` },
+            ]
+        })
     ]
-});
+}
+
+module.exports = []
+    .concat(designerConfig)
+    .map(x => merge(x, developmentConfig));

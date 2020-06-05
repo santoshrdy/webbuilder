@@ -1,15 +1,16 @@
 const path = require("path");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
+const CleanWebpackPlugin = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const runtimeConfig = require("./webpack.runtime.js");
 
 
 const designerConfig = {
+    mode: "none",
     target: "web",
     entry: {
         "editors/scripts/paperbits": ["./src/startup.design.ts"],
         "editors/styles/paperbits": [`./src/themes/designer/styles/styles.scss`],
-        "scripts/theme": ["./src/startup.runtime.ts"],
-        "styles/theme": [`./src/themes/website/styles/styles.design.scss`]
     },
     output: {
         filename: "./[name].js",
@@ -32,7 +33,14 @@ const designerConfig = {
             },
             {
                 test: /\.html$/,
-                loader: "html-loader?exportAsEs6Default"
+                loader: "html-loader",
+                options: {
+                    esModule: true,
+                    minimize: {
+                        removeComments: false,
+                        collapseWhitespace: false
+                    }
+                }
             },
             {
                 test: /\.(png|woff|woff2|eot|ttf|svg)$/,
@@ -52,18 +60,19 @@ const designerConfig = {
         ]
     },
     plugins: [
+        new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
             filename: "[name].css",
             chunkFilename: "[id].css"
         }),
-        new CopyWebpackPlugin([
-            { from: `./src/data/demo.json`, to: `./data/demo.json` },
-            { from: `./src/config.design.json`, to: `./config.json` },
-            { from: `./src/themes/designer/assets/index.html`, to: "index.html" },
-            { from: `./src/themes/designer/styles/fonts`, to: "editors/styles/fonts" },
-            { from: `./src/themes/website/styles/fonts`, to: "styles/fonts" },
-            { from: `./src/themes/website/assets` }
-        ])
+        new CopyWebpackPlugin({
+            patterns: [
+                { from: `./src/data`, to: `./data` },
+                { from: `./src/config.design.json`, to: `./config.json` },
+                { from: `./src/themes/designer/assets/index.html`, to: "index.html" },
+                { from: `./src/themes/designer/styles/fonts`, to: "editors/styles/fonts" },
+            ]
+        })
     ],
     resolve: {
         alias: {
@@ -73,4 +82,4 @@ const designerConfig = {
     }
 };
 
-module.exports = designerConfig;
+module.exports = [designerConfig, runtimeConfig(true)]
