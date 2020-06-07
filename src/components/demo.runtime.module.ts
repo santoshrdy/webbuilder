@@ -18,7 +18,7 @@ import { StaticRoleService } from "./staticRoleService";
 import { SearchRuntimeModule } from "@paperbits/core/search/search.runtime.module";
 
 /* Knockout example component */
-// import { ClickCounterRuntimeModule } from "./click-counter/ko/runtime/clickCounter.runtime.module";
+import { ClickCounterRuntimeModule } from "./click-counter/ko/runtime/clickCounter.runtime.module";
 
 /* Uncomment to switch to Vue example component */
 // import { ClickCounterRuntimeModule } from "./click-counter/vue/runtime/clickCounter.runtime.module";
@@ -26,9 +26,8 @@ import { SearchRuntimeModule } from "@paperbits/core/search/search.runtime.modul
 /* Uncomment to switch to React example component */
 // import { ClickCounterRuntimeModule } from "./click-counter/react/runtime/clickCounter.runtime.module";
 
-
 /* Uncomment to switch to Angular example component */
-import { ClickCounterRuntimeModule } from "./click-counter/angular/runtime/clickCounter.runtime.module";
+// import { ClickCounterRuntimeModule } from "./click-counter/angular/runtime/clickCounter.runtime.module";
 
 
 export class DemoRuntimeModule implements IInjectorModule {
