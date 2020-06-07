@@ -1,9 +1,7 @@
 import template from "./click-counter-runtime.html";
 import { Component, Input } from "@angular/core";
 
-// @RuntimeComponent({
-//     selector: "click-counter-runtime"
-// })
+
 @Component({
     selector: "click-counter-runtime",
     template: template

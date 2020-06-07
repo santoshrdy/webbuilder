@@ -1,16 +1,9 @@
 import { IInjector, IInjectorModule } from "@paperbits/common/injection";
-import { ClickCounterRuntime } from "./click-counter-runtime";
-
-
-
-// import { RuntimeComponent, Prop, OnMounted, OnDestroyed } from "@paperbits/common/vue/decorators";
+import { NgModule, Injector } from "@angular/core";
 import { platformBrowserDynamic } from "@angular/platform-browser-dynamic";
-
-
 import { BrowserModule } from "@angular/platform-browser";
-import { NgModule, Injector, Component, Input } from "@angular/core";
 import { createCustomElement } from "@angular/elements";
-
+import { ClickCounterRuntime } from "./click-counter-runtime";
 
 
 @NgModule({
@@ -18,28 +11,17 @@ import { createCustomElement } from "@angular/elements";
     imports: [BrowserModule],
     entryComponents: [ClickCounterRuntime]
 })
-export class AppModule {
-    constructor(private injector: Injector) {
-        const myComponent = createCustomElement(ClickCounterRuntime, { injector: this.injector });
-
-        console.log(myComponent);
-        customElements.define("click-counter-runtime", myComponent);
-    }
-
-    public ngDoBootstrap() {
-        //
+export class AngularAppModule {
+    constructor(private angularInjector: Injector) {
+        const elementConstructor = createCustomElement(ClickCounterRuntime, { injector: this.angularInjector });
+        customElements.define("click-counter-runtime", elementConstructor);
     }
 }
 
-
-
 export class ClickCounterRuntimeModule implements IInjectorModule {
-    public register(injector: IInjector): void {
-        // injector.bind("clickCounterRuntime", ClickCounterRuntime);
-
-
+    public register(paperbitsInjector: IInjector): void {
         platformBrowserDynamic()
-            .bootstrapModule(AppModule)
-            .catch(errors => console.log(errors));
+            .bootstrapModule(AngularAppModule)
+            .catch(error => console.log(error));
     }
 }
