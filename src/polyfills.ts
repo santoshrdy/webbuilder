@@ -1,4 +1,3 @@
-import "@webcomponents/custom-elements";
 import "@webcomponents/custom-elements/src/native-shim";
 import "core-js/es/array";
 import "core-js/es/object";

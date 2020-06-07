@@ -14,10 +14,10 @@ export class ClickCounterRuntime {
     }
 
     @Input()
-    public readonly initialCount: number;
+    public readonly initialCount: string;
 
     public async ngOnInit(): Promise<void> {
-        this.clickCount = this.initialCount;
+        this.clickCount = parseInt(this.initialCount);
     }
 
     public increaseCount(): void {
