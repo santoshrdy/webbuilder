@@ -16,6 +16,7 @@ import { KnockoutRegistrationLoaders } from "@paperbits/core/ko/knockout.loaders
 import { StaticUserService } from "./staticUserService";
 import { StaticRoleService } from "./staticRoleService";
 import { SearchRuntimeModule } from "@paperbits/core/search/search.runtime.module";
+import { MapRuntimeModule } from "@paperbits/core/map";
 
 /* Knockout example component */
 import { ClickCounterRuntimeModule } from "./click-counter/ko/runtime";
@@ -35,6 +36,7 @@ export class DemoRuntimeModule implements IInjectorModule {
         injector.bindModule(new KnockoutRegistrationLoaders());
         injector.bindModule(new ClickCounterRuntimeModule());
         injector.bindModule(new SearchRuntimeModule());
+        injector.bindModule(new MapRuntimeModule());
         injector.bindSingleton("eventManager", DefaultEventManager);
         injector.bindCollection("autostart");
         injector.bindCollection("routeGuards");
