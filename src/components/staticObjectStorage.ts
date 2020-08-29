@@ -182,6 +182,11 @@ export class StaticObjectStorage implements IObjectStorage {
                     return 0;
                 });
             }
+
+            const skip = query.skipping || 0;
+            const take = query.taking || collection.length;
+
+            collection = collection.slice(skip, take);
         }
 
         collection.forEach(item => {
