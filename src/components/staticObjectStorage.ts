@@ -11,7 +11,7 @@ import * as _ from "lodash";
 import * as FileSaver from "file-saver";
 import * as Objects from "@paperbits/common/objects";
 import { HttpClient } from "@paperbits/common/http";
-import { IObjectStorage, Query, Operator, OrderDirection } from "@paperbits/common/persistence";
+import { IObjectStorage, Query, Operator, OrderDirection, Page } from "@paperbits/common/persistence";
 import { Bag } from "@paperbits/common";
 
 /**
@@ -101,18 +101,18 @@ export class StaticObjectStorage implements IObjectStorage {
         Objects.cleanupObject(clone); // Ensure all "undefined" are cleaned up
     }
 
-    public async searchObjects<T>(path: string, query: Query<T>): Promise<Bag<T>> {
-        const searchResultObject: Bag<T> = {};
+    public async searchObjects<T>(path: string, query: Query<T>): Promise<Page<T>> {
+        const searchResultObject: any = {};
         const data = await this.getData();
 
         if (!data) {
-            return searchResultObject;
+            return { value: searchResultObject };
         }
 
         const searchObj = Objects.getObjectAt(path, data);
 
         if (!searchObj) {
-            return {};
+            return { value: searchResultObject };
         }
 
         let collection = Object.values(searchObj);
@@ -192,7 +192,7 @@ export class StaticObjectStorage implements IObjectStorage {
             Objects.cleanupObject(item); // Ensure all "undefined" are cleaned up
         });
 
-        return searchResultObject;
+        return { value: searchResultObject };
     }
 
     public async saveChanges(delta: Object): Promise<void> {
