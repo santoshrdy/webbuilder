@@ -104,6 +104,7 @@ export class StaticObjectStorage implements IObjectStorage {
     public async searchObjects<T>(path: string, query: Query<T>): Promise<Page<T>> {
         const searchResultObject: any = {};
         const data = await this.getData();
+        const resultPage: Page<T> = { value: null };
 
         if (!data) {
             return { value: searchResultObject };
@@ -116,6 +117,7 @@ export class StaticObjectStorage implements IObjectStorage {
         }
 
         let collection = Object.values(searchObj);
+        const collectionSize = collection.length;
 
         if (query) {
             if (query.filters.length > 0) {
@@ -183,10 +185,18 @@ export class StaticObjectStorage implements IObjectStorage {
                 });
             }
 
-            const skip = query.skipping || 0;
-            const take = query.taking || collection.length;
+            const skip = query.skipping;
+            const take = query.taking;
 
-            collection = collection.slice(skip, take);
+            collection = collection.slice(skip, skip + take);
+
+            if (collectionSize > skip + take) {
+                resultPage.nextPage = query.getNextPageQuery<T>();
+            }
+
+            if (skip > 0 && take > 0) {
+                resultPage.prevPage = query.getPrevPageQuery<T>();
+            }
         }
 
         collection.forEach(item => {
@@ -197,7 +207,9 @@ export class StaticObjectStorage implements IObjectStorage {
             Objects.cleanupObject(item); // Ensure all "undefined" are cleaned up
         });
 
-        return { value: searchResultObject };
+        resultPage.value = searchResultObject;
+
+        return resultPage;
     }
 
     public async saveChanges(delta: Object): Promise<void> {
