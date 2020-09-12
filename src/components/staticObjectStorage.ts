@@ -12,7 +12,6 @@ import * as FileSaver from "file-saver";
 import * as Objects from "@paperbits/common/objects";
 import { HttpClient } from "@paperbits/common/http";
 import { IObjectStorage, Query, Operator, OrderDirection, Page } from "@paperbits/common/persistence";
-import { Bag } from "@paperbits/common";
 
 /**
  * Static object storage for demo purposes. It stores all the uploaded blobs in memory.
@@ -102,7 +101,7 @@ export class StaticObjectStorage implements IObjectStorage {
     }
 
     public async searchObjects<T>(path: string, query: Query<T>): Promise<Page<T>> {
-        const searchResultObject: any = {};
+        const searchResultObject: T[] = [];
         const data = await this.getData();
         const resultPage: Page<T> = { value: null };
 
@@ -116,7 +115,7 @@ export class StaticObjectStorage implements IObjectStorage {
             return { value: searchResultObject };
         }
 
-        let collection = Object.values(searchObj);
+        let collection: any[] = Object.values(searchObj);
         const collectionSize = collection.length;
 
         if (query) {
@@ -199,15 +198,7 @@ export class StaticObjectStorage implements IObjectStorage {
             }
         }
 
-        collection.forEach(item => {
-            const segments = item.key.split("/");
-            const key = segments[1];
-
-            Objects.setValue(key, searchResultObject, item);
-            Objects.cleanupObject(item); // Ensure all "undefined" are cleaned up
-        });
-
-        resultPage.value = searchResultObject;
+        resultPage.value = collection;
 
         return resultPage;
     }
@@ -278,5 +269,23 @@ export class StaticObjectStorage implements IObjectStorage {
 
             input.click();
         });
+    }
+}
+
+export class StaticPage<T> implements Page<T> {
+    constructor(
+        public readonly value: T[],
+        private readonly collection: any,
+        private readonly skip: number
+    ) { }
+
+    public async takePrev?(numberOfRecords: number): Promise<Page<T>> {
+        throw new Error("Not implemented");
+    }
+
+    public async takeNext?(numberOfRecords: number): Promise<Page<T>> {
+        const value = this.collection.slice(this.skip, this.skip + numberOfRecords);
+        const skipNext = this.skip + numberOfRecords;
+        return new StaticPage(value, this.collection, skipNext);
     }
 }
