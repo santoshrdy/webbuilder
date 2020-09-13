@@ -13,6 +13,8 @@ import * as Objects from "@paperbits/common/objects";
 import { HttpClient } from "@paperbits/common/http";
 import { IObjectStorage, Query, Operator, OrderDirection, Page } from "@paperbits/common/persistence";
 
+const pageSize = 7;
+
 /**
  * Static object storage for demo purposes. It stores all the uploaded blobs in memory.
  */
@@ -116,7 +118,6 @@ export class StaticObjectStorage implements IObjectStorage {
         }
 
         let collection: any[] = Object.values(searchObj);
-        const collectionSize = collection.length;
 
         if (query) {
             if (query.filters.length > 0) {
@@ -183,24 +184,17 @@ export class StaticObjectStorage implements IObjectStorage {
                     return 0;
                 });
             }
-
-            const skip = query.skipping;
-            const take = query.taking;
-
-            collection = collection.slice(skip, skip + take);
-
-            if (collectionSize > skip + take) {
-                resultPage.nextPage = query.getNextPageQuery<T>();
-            }
-
-            if (skip > 0 && take > 0) {
-                resultPage.prevPage = query.getPrevPageQuery<T>();
-            }
         }
 
-        resultPage.value = collection;
 
-        return resultPage;
+        const skip = 0;
+        const take = pageSize;
+        const value = collection.slice(skip, skip + take);
+        resultPage.value = value;
+
+        const p = new StaticPage(value, collection, skip, take);
+
+        return p;
     }
 
     public async saveChanges(delta: Object): Promise<void> {
@@ -272,20 +266,30 @@ export class StaticObjectStorage implements IObjectStorage {
     }
 }
 
-export class StaticPage<T> implements Page<T> {
+class StaticPage<T> implements Page<T> {
     constructor(
         public readonly value: T[],
         private readonly collection: any,
-        private readonly skip: number
-    ) { }
+        private readonly skip: number,
+        private readonly take: number
+    ) {
+        if (skip + take > this.collection.length) {
+            this.takeNext = null;
+        }
+    }
 
     public async takePrev?(numberOfRecords: number): Promise<Page<T>> {
         throw new Error("Not implemented");
     }
 
-    public async takeNext?(numberOfRecords: number): Promise<Page<T>> {
+    public async takeNext?(numberOfRecords: number = pageSize): Promise<Page<T>> {
         const value = this.collection.slice(this.skip, this.skip + numberOfRecords);
         const skipNext = this.skip + numberOfRecords;
-        return new StaticPage(value, this.collection, skipNext);
+        const takeNext = numberOfRecords || this.take;
+
+        const nextPage = new StaticPage<T>(value, this.collection, skipNext, takeNext);
+
+
+        return nextPage;
     }
 }
