@@ -10,10 +10,11 @@
 import * as _ from "lodash";
 import * as FileSaver from "file-saver";
 import * as Objects from "@paperbits/common/objects";
+import * as Utils from   "@paperbits/common/utils";
 import { HttpClient } from "@paperbits/common/http";
 import { IObjectStorage, Query, Operator, OrderDirection, Page } from "@paperbits/common/persistence";
 
-const pageSize = 7;
+const pageSize = 5;
 
 /**
  * Static object storage for demo purposes. It stores all the uploaded blobs in memory.
@@ -103,6 +104,8 @@ export class StaticObjectStorage implements IObjectStorage {
     }
 
     public async searchObjects<T>(path: string, query: Query<T>): Promise<Page<T>> {
+        await Utils.delay(2000);
+
         const searchResultObject: T[] = [];
         const data = await this.getData();
 
@@ -111,6 +114,10 @@ export class StaticObjectStorage implements IObjectStorage {
         }
 
         const searchObj = Objects.getObjectAt(path, data);
+
+        if (!searchObj) {
+            return { value: [] };
+        }
 
         let collection: any[] = Object.values(searchObj);
 
@@ -233,6 +240,7 @@ export class StaticObjectStorage implements IObjectStorage {
 
                 const target: HTMLInputElement = <HTMLInputElement>e.target;
                 const file = target.files[0];
+
                 if (!file) {
                     resolve(undefined);
                 }
@@ -274,12 +282,12 @@ class StaticPage<T> implements Page<T> {
     }
 
     public async takeNext?(): Promise<Page<T>> {
+        await Utils.delay(2000);
+
         const value = this.collection.slice(this.skip, this.skip + pageSize);
         const skipNext = this.skip + pageSize;
         const takeNext = pageSize || this.take;
-
         const nextPage = new StaticPage<T>(value, this.collection, skipNext, takeNext);
-
 
         return nextPage;
     }
