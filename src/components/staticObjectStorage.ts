@@ -105,17 +105,12 @@ export class StaticObjectStorage implements IObjectStorage {
     public async searchObjects<T>(path: string, query: Query<T>): Promise<Page<T>> {
         const searchResultObject: T[] = [];
         const data = await this.getData();
-        const resultPage: Page<T> = { value: null };
 
         if (!data) {
             return { value: searchResultObject };
         }
 
         const searchObj = Objects.getObjectAt(path, data);
-
-        if (!searchObj) {
-            return { value: searchResultObject };
-        }
 
         let collection: any[] = Object.values(searchObj);
 
@@ -186,15 +181,11 @@ export class StaticObjectStorage implements IObjectStorage {
             }
         }
 
-
         const skip = 0;
         const take = pageSize;
         const value = collection.slice(skip, skip + take);
-        resultPage.value = value;
 
-        const p = new StaticPage(value, collection, skip, take);
-
-        return p;
+        return new StaticPage(value, collection, skip, take);
     }
 
     public async saveChanges(delta: Object): Promise<void> {
@@ -278,14 +269,14 @@ class StaticPage<T> implements Page<T> {
         }
     }
 
-    public async takePrev?(numberOfRecords: number): Promise<Page<T>> {
+    public async takePrev?(): Promise<Page<T>> {
         throw new Error("Not implemented");
     }
 
-    public async takeNext?(numberOfRecords: number = pageSize): Promise<Page<T>> {
-        const value = this.collection.slice(this.skip, this.skip + numberOfRecords);
-        const skipNext = this.skip + numberOfRecords;
-        const takeNext = numberOfRecords || this.take;
+    public async takeNext?(): Promise<Page<T>> {
+        const value = this.collection.slice(this.skip, this.skip + pageSize);
+        const skipNext = this.skip + pageSize;
+        const takeNext = pageSize || this.take;
 
         const nextPage = new StaticPage<T>(value, this.collection, skipNext, takeNext);
 
