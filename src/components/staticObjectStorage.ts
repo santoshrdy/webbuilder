@@ -10,7 +10,6 @@
 import * as _ from "lodash";
 import * as FileSaver from "file-saver";
 import * as Objects from "@paperbits/common/objects";
-import * as Utils from "@paperbits/common/utils";
 import { HttpClient } from "@paperbits/common/http";
 import { IObjectStorage, Query, Operator, OrderDirection, Page } from "@paperbits/common/persistence";
 
@@ -104,8 +103,6 @@ export class StaticObjectStorage implements IObjectStorage {
     }
 
     public async searchObjects<T>(path: string, query: Query<T>): Promise<Page<T>> {
-        await Utils.delay(2000);
-
         const data = await this.getData();
 
         if (!data) {
@@ -278,7 +275,6 @@ class StaticPage<T> implements Page<T> {
     }
 
     public async takeNext?(): Promise<Page<T>> {
-        await Utils.delay(2000);
         const value = this.collection.slice(this.skip, this.skip + pageSize);
         const skipNext = this.skip + pageSize;
         const nextPage = new StaticPage<T>(value, this.collection, skipNext);
