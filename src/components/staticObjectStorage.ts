@@ -106,11 +106,10 @@ export class StaticObjectStorage implements IObjectStorage {
     public async searchObjects<T>(path: string, query: Query<T>): Promise<Page<T>> {
         await Utils.delay(2000);
 
-        const searchResultObject: T[] = [];
         const data = await this.getData();
 
         if (!data) {
-            return { value: searchResultObject };
+            return { value: [] };
         }
 
         const searchObj = Objects.getObjectAt(path, data);
