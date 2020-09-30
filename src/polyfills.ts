@@ -6,4 +6,3 @@ import "core-js/es/reflect";
 import "core-js/es/symbol";
 
 /* Angular dependency */
-import "zone.js/dist/zone";
