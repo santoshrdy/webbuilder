@@ -12,18 +12,18 @@
 //    is the upcoming slide in transition.
 
 $carousel-control-width: 20px;
-$carousel-control-color: #fff;
+$carousel-control-color: #ccc;
 $carousel-control-opacity: .5;
 $enable-gradients: false;
 $carousel-control-icon-width: 20px;
-$carousel-control-prev-icon-bg: #fff;
-$carousel-control-next-icon-bg: #fff;
+$carousel-control-prev-icon-bg: #ccc;
+$carousel-control-next-icon-bg: #ccc;
 $carousel-indicator-width: 20px;
 $carousel-indicator-height: 20px;
 $carousel-indicator-spacer: 20px;
 
 .carousel {
-    position: relative;
+   //  position: relative;
 }
 
 .carousel.pointer-event {
@@ -39,7 +39,7 @@ $carousel-indicator-spacer: 20px;
 
 .carousel-item {
     position: relative;
-    display: none;
+    // display: none;
     float: left;
     width: 100%;
     margin-right: -100%;
