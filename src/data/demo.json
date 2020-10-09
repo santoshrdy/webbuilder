@@ -20512,244 +20512,492 @@
             "nodes": [
                 {
                     "type": "carousel",
-                    "nodes": [
+                    "carouselItems": [
                         {
-                            "type": "grid",
+                            "type": "carousel-item",
                             "nodes": [
                                 {
-                                    "type": "grid-cell",
-                                    "nodes": null,
-                                    "role": "article",
-                                    "styles": {
-                                        "instance": {
-                                            "grid-cell": {
-                                                "md": {
-                                                    "position": {
-                                                        "col": 2,
-                                                        "row": 1
-                                                    },
-                                                    "span": {
-                                                        "cols": 2,
-                                                        "rows": 2
-                                                    }
-                                                },
-                                                "xs": {
-                                                    "position": {
-                                                        "col": 1,
-                                                        "row": 1
-                                                    },
-                                                    "span": {
-                                                        "cols": 1,
-                                                        "rows": 1
-                                                    }
-                                                }
-                                            },
-                                            "key": "tufelqtocn",
-                                            "padding": {
-                                                "xs": {
-                                                    "top": 5,
-                                                    "left": 5,
-                                                    "right": 5,
-                                                    "bottom": 5
-                                                },
-                                                "md": {
-                                                    "top": 15,
-                                                    "left": 15,
-                                                    "right": 15,
-                                                    "bottom": 15
-                                                }
-                                            }
-                                        }
-                                    }
-                                },
-                                {
-                                    "type": "grid-cell",
+                                    "type": "grid",
                                     "nodes": [
                                         {
-                                            "type": "text-block",
+                                            "type": "grid-cell",
+                                            "nodes": null,
+                                            "role": "article",
+                                            "styles": {
+                                                "instance": {
+                                                    "grid-cell": {
+                                                        "md": {
+                                                            "position": {
+                                                                "col": 2,
+                                                                "row": 1
+                                                            },
+                                                            "span": {
+                                                                "cols": 2,
+                                                                "rows": 2
+                                                            }
+                                                        },
+                                                        "xs": {
+                                                            "position": {
+                                                                "col": 1,
+                                                                "row": 1
+                                                            },
+                                                            "span": {
+                                                                "cols": 1,
+                                                                "rows": 1
+                                                            }
+                                                        }
+                                                    },
+                                                    "key": "tufelqtocn",
+                                                    "padding": {
+                                                        "xs": {
+                                                            "top": 5,
+                                                            "left": 5,
+                                                            "right": 5,
+                                                            "bottom": 5
+                                                        },
+                                                        "md": {
+                                                            "top": 15,
+                                                            "left": 15,
+                                                            "right": 15,
+                                                            "bottom": 15
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "type": "grid-cell",
                                             "nodes": [
                                                 {
-                                                    "type": "heading1",
-                                                    "styles": null,
-                                                    "identifier": "Z7pZy",
+                                                    "type": "text-block",
                                                     "nodes": [
                                                         {
-                                                            "type": "text",
-                                                            "text": "ABCD"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "type": "paragraph",
-                                                    "styles": null,
-                                                    "identifier": null,
-                                                    "nodes": [
+                                                            "type": "heading1",
+                                                            "styles": null,
+                                                            "identifier": "Z7pZy",
+                                                            "nodes": [
+                                                                {
+                                                                    "type": "text",
+                                                                    "text": "ABCD"
+                                                                }
+                                                            ]
+                                                        },
                                                         {
-                                                            "type": "text",
-                                                            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                                                            "type": "paragraph",
+                                                            "styles": null,
+                                                            "identifier": null,
+                                                            "nodes": [
+                                                                {
+                                                                    "type": "text",
+                                                                    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                                                                }
+                                                            ]
                                                         }
                                                     ]
                                                 }
-                                            ]
+                                            ],
+                                            "role": "aside",
+                                            "styles": {
+                                                "instance": {
+                                                    "grid-cell": {
+                                                        "md": {
+                                                            "position": {
+                                                                "col": 1,
+                                                                "row": 1
+                                                            },
+                                                            "span": {
+                                                                "cols": 1,
+                                                                "rows": 1
+                                                            },
+                                                            "alignment": {
+                                                                "vertical": "center",
+                                                                "horizontal": "center"
+                                                            }
+                                                        },
+                                                        "xs": {
+                                                            "position": {
+                                                                "col": 1,
+                                                                "row": 2
+                                                            },
+                                                            "span": {
+                                                                "cols": 1,
+                                                                "rows": 1
+                                                            }
+                                                        }
+                                                    },
+                                                    "key": "vztmofysxs",
+                                                    "padding": {
+                                                        "xs": {
+                                                            "top": 5,
+                                                            "left": 5,
+                                                            "right": 5,
+                                                            "bottom": 5
+                                                        },
+                                                        "md": {
+                                                            "top": 15,
+                                                            "left": 15,
+                                                            "right": 15,
+                                                            "bottom": 15
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "type": "grid-cell",
+                                            "nodes": null,
+                                            "role": "aside",
+                                            "styles": {
+                                                "instance": {
+                                                    "grid-cell": {
+                                                        "md": {
+                                                            "position": {
+                                                                "col": 1,
+                                                                "row": 2
+                                                            },
+                                                            "span": {
+                                                                "cols": 1,
+                                                                "rows": 1
+                                                            },
+                                                            "alignment": {
+                                                                "vertical": "center",
+                                                                "horizontal": "center"
+                                                            }
+                                                        },
+                                                        "xs": {
+                                                            "position": {
+                                                                "col": 1,
+                                                                "row": 3
+                                                            },
+                                                            "span": {
+                                                                "cols": 1,
+                                                                "rows": 1
+                                                            }
+                                                        }
+                                                    },
+                                                    "key": "gwyqvpkhsn",
+                                                    "padding": {
+                                                        "xs": {
+                                                            "top": 5,
+                                                            "left": 5,
+                                                            "right": 5,
+                                                            "bottom": 5
+                                                        },
+                                                        "md": {
+                                                            "top": 15,
+                                                            "left": 15,
+                                                            "right": 15,
+                                                            "bottom": 15
+                                                        }
+                                                    }
+                                                }
+                                            }
                                         }
                                     ],
-                                    "role": "aside",
                                     "styles": {
                                         "instance": {
-                                            "grid-cell": {
+                                            "grid": {
                                                 "md": {
-                                                    "position": {
-                                                        "col": 1,
-                                                        "row": 1
-                                                    },
-                                                    "span": {
-                                                        "cols": 1,
-                                                        "rows": 1
-                                                    },
-                                                    "alignment": {
-                                                        "vertical": "center",
-                                                        "horizontal": "center"
-                                                    }
+                                                    "rows": [
+                                                        "auto",
+                                                        "1fr"
+                                                    ],
+                                                    "cols": [
+                                                        "1fr",
+                                                        "1fr",
+                                                        "1fr"
+                                                    ]
                                                 },
                                                 "xs": {
-                                                    "position": {
-                                                        "col": 1,
-                                                        "row": 2
-                                                    },
-                                                    "span": {
-                                                        "cols": 1,
-                                                        "rows": 1
-                                                    }
+                                                    "rows": [
+                                                        "auto",
+                                                        "auto",
+                                                        "auto",
+                                                        "auto"
+                                                    ],
+                                                    "cols": [
+                                                        "1fr"
+                                                    ]
                                                 }
                                             },
-                                            "key": "vztmofysxs",
-                                            "padding": {
+                                            "key": "hbzllfjxye",
+                                            "size": {
+                                                "sm": {
+                                                    "maxWidth": 540
+                                                },
+                                                "md": {
+                                                    "maxWidth": 720
+                                                },
+                                                "lg": {
+                                                    "maxWidth": 960
+                                                },
+                                                "xl": {
+                                                    "maxWidth": 1140
+                                                }
+                                            },
+                                            "margin": {
                                                 "xs": {
-                                                    "top": 5,
-                                                    "left": 5,
-                                                    "right": 5,
-                                                    "bottom": 5
+                                                    "top": 10,
+                                                    "left": "auto",
+                                                    "right": "auto",
+                                                    "bottom": 10
                                                 },
                                                 "md": {
                                                     "top": 15,
-                                                    "left": 15,
-                                                    "right": 15,
                                                     "bottom": 15
+                                                },
+                                                "xl": {
+                                                    "top": 25,
+                                                    "bottom": 25
                                                 }
                                             }
                                         }
                                     }
-                                },
+                                }
+                            ]
+                        },
+                        {
+                            "type": "carousel-item",
+                            "nodes": [
                                 {
-                                    "type": "grid-cell",
-                                    "nodes": null,
-                                    "role": "aside",
-                                    "styles": {
-                                        "instance": {
-                                            "grid-cell": {
-                                                "md": {
-                                                    "position": {
-                                                        "col": 1,
-                                                        "row": 2
+                                    "type": "grid",
+                                    "nodes": [
+                                        {
+                                            "type": "grid-cell",
+                                            "nodes": null,
+                                            "role": "article",
+                                            "styles": {
+                                                "instance": {
+                                                    "grid-cell": {
+                                                        "md": {
+                                                            "position": {
+                                                                "col": 2,
+                                                                "row": 1
+                                                            },
+                                                            "span": {
+                                                                "cols": 2,
+                                                                "rows": 2
+                                                            }
+                                                        },
+                                                        "xs": {
+                                                            "position": {
+                                                                "col": 1,
+                                                                "row": 1
+                                                            },
+                                                            "span": {
+                                                                "cols": 1,
+                                                                "rows": 1
+                                                            }
+                                                        }
                                                     },
-                                                    "span": {
-                                                        "cols": 1,
-                                                        "rows": 1
-                                                    },
-                                                    "alignment": {
-                                                        "vertical": "center",
-                                                        "horizontal": "center"
-                                                    }
-                                                },
-                                                "xs": {
-                                                    "position": {
-                                                        "col": 1,
-                                                        "row": 3
-                                                    },
-                                                    "span": {
-                                                        "cols": 1,
-                                                        "rows": 1
+                                                    "key": "tufelqtocn",
+                                                    "padding": {
+                                                        "xs": {
+                                                            "top": 5,
+                                                            "left": 5,
+                                                            "right": 5,
+                                                            "bottom": 5
+                                                        },
+                                                        "md": {
+                                                            "top": 15,
+                                                            "left": 15,
+                                                            "right": 15,
+                                                            "bottom": 15
+                                                        }
                                                     }
                                                 }
-                                            },
-                                            "key": "gwyqvpkhsn",
-                                            "padding": {
+                                            }
+                                        },
+                                        {
+                                            "type": "grid-cell",
+                                            "nodes": [
+                                                {
+                                                    "type": "text-block",
+                                                    "nodes": [
+                                                        {
+                                                            "type": "heading1",
+                                                            "styles": null,
+                                                            "identifier": "Z7pZy",
+                                                            "nodes": [
+                                                                {
+                                                                    "type": "text",
+                                                                    "text": "ABCD1111"
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "paragraph",
+                                                            "styles": null,
+                                                            "identifier": null,
+                                                            "nodes": [
+                                                                {
+                                                                    "type": "text",
+                                                                    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "role": "aside",
+                                            "styles": {
+                                                "instance": {
+                                                    "grid-cell": {
+                                                        "md": {
+                                                            "position": {
+                                                                "col": 1,
+                                                                "row": 1
+                                                            },
+                                                            "span": {
+                                                                "cols": 1,
+                                                                "rows": 1
+                                                            },
+                                                            "alignment": {
+                                                                "vertical": "center",
+                                                                "horizontal": "center"
+                                                            }
+                                                        },
+                                                        "xs": {
+                                                            "position": {
+                                                                "col": 1,
+                                                                "row": 2
+                                                            },
+                                                            "span": {
+                                                                "cols": 1,
+                                                                "rows": 1
+                                                            }
+                                                        }
+                                                    },
+                                                    "key": "vztmofysxs",
+                                                    "padding": {
+                                                        "xs": {
+                                                            "top": 5,
+                                                            "left": 5,
+                                                            "right": 5,
+                                                            "bottom": 5
+                                                        },
+                                                        "md": {
+                                                            "top": 15,
+                                                            "left": 15,
+                                                            "right": 15,
+                                                            "bottom": 15
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "type": "grid-cell",
+                                            "nodes": null,
+                                            "role": "aside",
+                                            "styles": {
+                                                "instance": {
+                                                    "grid-cell": {
+                                                        "md": {
+                                                            "position": {
+                                                                "col": 1,
+                                                                "row": 2
+                                                            },
+                                                            "span": {
+                                                                "cols": 1,
+                                                                "rows": 1
+                                                            },
+                                                            "alignment": {
+                                                                "vertical": "center",
+                                                                "horizontal": "center"
+                                                            }
+                                                        },
+                                                        "xs": {
+                                                            "position": {
+                                                                "col": 1,
+                                                                "row": 3
+                                                            },
+                                                            "span": {
+                                                                "cols": 1,
+                                                                "rows": 1
+                                                            }
+                                                        }
+                                                    },
+                                                    "key": "gwyqvpkhsn",
+                                                    "padding": {
+                                                        "xs": {
+                                                            "top": 5,
+                                                            "left": 5,
+                                                            "right": 5,
+                                                            "bottom": 5
+                                                        },
+                                                        "md": {
+                                                            "top": 15,
+                                                            "left": 15,
+                                                            "right": 15,
+                                                            "bottom": 15
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "styles": {
+                                        "instance": {
+                                            "grid": {
+                                                "md": {
+                                                    "rows": [
+                                                        "auto",
+                                                        "1fr"
+                                                    ],
+                                                    "cols": [
+                                                        "1fr",
+                                                        "1fr",
+                                                        "1fr"
+                                                    ]
+                                                },
                                                 "xs": {
-                                                    "top": 5,
-                                                    "left": 5,
-                                                    "right": 5,
-                                                    "bottom": 5
+                                                    "rows": [
+                                                        "auto",
+                                                        "auto",
+                                                        "auto",
+                                                        "auto"
+                                                    ],
+                                                    "cols": [
+                                                        "1fr"
+                                                    ]
+                                                }
+                                            },
+                                            "key": "hbzllfjxye",
+                                            "size": {
+                                                "sm": {
+                                                    "maxWidth": 540
+                                                },
+                                                "md": {
+                                                    "maxWidth": 720
+                                                },
+                                                "lg": {
+                                                    "maxWidth": 960
+                                                },
+                                                "xl": {
+                                                    "maxWidth": 1140
+                                                }
+                                            },
+                                            "margin": {
+                                                "xs": {
+                                                    "top": 10,
+                                                    "left": "auto",
+                                                    "right": "auto",
+                                                    "bottom": 10
                                                 },
                                                 "md": {
                                                     "top": 15,
-                                                    "left": 15,
-                                                    "right": 15,
                                                     "bottom": 15
+                                                },
+                                                "xl": {
+                                                    "top": 25,
+                                                    "bottom": 25
                                                 }
                                             }
                                         }
                                     }
                                 }
-                            ],
-                            "styles": {
-                                "instance": {
-                                    "grid": {
-                                        "md": {
-                                            "rows": [
-                                                "auto",
-                                                "1fr"
-                                            ],
-                                            "cols": [
-                                                "1fr",
-                                                "1fr",
-                                                "1fr"
-                                            ]
-                                        },
-                                        "xs": {
-                                            "rows": [
-                                                "auto",
-                                                "auto",
-                                                "auto",
-                                                "auto"
-                                            ],
-                                            "cols": [
-                                                "1fr"
-                                            ]
-                                        }
-                                    },
-                                    "key": "hbzllfjxye",
-                                    "size": {
-                                        "sm": {
-                                            "maxWidth": 540
-                                        },
-                                        "md": {
-                                            "maxWidth": 720
-                                        },
-                                        "lg": {
-                                            "maxWidth": 960
-                                        },
-                                        "xl": {
-                                            "maxWidth": 1140
-                                        }
-                                    },
-                                    "margin": {
-                                        "xs": {
-                                            "top": 10,
-                                            "left": "auto",
-                                            "right": "auto",
-                                            "bottom": 10
-                                        },
-                                        "md": {
-                                            "top": 15,
-                                            "bottom": 15
-                                        },
-                                        "xl": {
-                                            "top": 25,
-                                            "bottom": 25
-                                        }
-                                    }
-                                }
-                            }
+                            ]
                         }
                     ]
                 },
