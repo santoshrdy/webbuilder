@@ -24750,6 +24750,18 @@
                         "weight": "400"
                     }
                 ]
+            },
+            "icons": {
+                "displayName": "Icons",
+                "family": "Icons",
+                "key": "fonts/icons",
+                "variants": [
+                    {
+                        "file": "/styles/fonts/icons.ttf",
+                        "style": "normal",
+                        "weight": "400"
+                    }
+                ]
             }
         },
         "globals": {
@@ -25023,10 +25035,13 @@
             }
         },
         "icons": {
-            "icon1": {
-                "displayName": "Magnifier",
-                "key": "icons/icon1",
-                "unicode": 59906
+            "iconFontUrl": "",
+            "glyphs": {
+                "icon1": {
+                    "displayName": "Magnifier",
+                    "key": "icons/icon1",
+                    "unicode": 59906
+                }
             }
         },
         "utils": {
