@@ -25035,13 +25035,10 @@
             }
         },
         "icons": {
-            "iconFontUrl": "",
-            "glyphs": {
-                "icon1": {
-                    "displayName": "Magnifier",
-                    "key": "icons/icon1",
-                    "unicode": 59906
-                }
+            "icon1": {
+                "displayName": "Magnifier",
+                "key": "icons/icon1",
+                "unicode": 59906
             }
         },
         "utils": {
