@@ -45,6 +45,12 @@
     height: 400px;
 }
 
+.list-section-label {
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+}
+
 .list-item {
     // line-height: $list-item-size;
     line-height: 2em;
@@ -108,7 +114,12 @@
 
     &.list-item-icon {
         float: left;
-        margin: 0;
+        padding: 5px;
+        display: block;
+        text-align: center;
+        line-height: 1em;
+        width: 90px;
+        height: 90px;
     }
 
     &.list-item-large {

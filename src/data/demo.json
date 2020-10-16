@@ -20508,23 +20508,58 @@
             "type": "layout-section"
         },
         "ffdcdb4e-bad4-dfd7-3e9c-c0b2a917b66a": {
-            "key": "files/ffdcdb4e-bad4-dfd7-3e9c-c0b2a917b66a",
+            "type": "page",
             "nodes": [
                 {
+                    "type": "layout-section",
+                    "styles": {
+                        "instance": {
+                            "key": "npxnxrouyk",
+                            "size": {
+                                "lg": {
+                                    "stretch": false
+                                },
+                                "md": {
+                                    "stretch": false
+                                },
+                                "sm": {
+                                    "stretch": false
+                                },
+                                "xl": {
+                                    "stretch": false
+                                },
+                                "xs": {
+                                    "stretch": false
+                                }
+                            },
+                            "stickTo": {
+                                "lg": "none",
+                                "md": "none",
+                                "sm": "none",
+                                "xl": "none",
+                                "xs": "none"
+                            }
+                        }
+                    },
                     "nodes": [
                         {
+                            "type": "grid",
                             "nodes": [
                                 {
+                                    "type": "grid-cell",
                                     "nodes": [
                                         {
+                                            "type": "picture",
                                             "caption": "Picture",
+                                            "width": "",
                                             "height": "",
-                                            "sourceKey": "uploads/f0b568bf-703a-0fa5-58b0-5b4574b18b93",
                                             "styles": {
                                                 "appearance": "components/picture/default"
                                             },
-                                            "type": "picture",
-                                            "width": ""
+                                            "sourceKey": "uploads/f0b568bf-703a-0fa5-58b0-5b4574b18b93",
+                                            "hyperlink": {
+                                                "targetKey": "pages/22ca5736-a296-d61d-6bc2-4f2d819824dd"
+                                            }
                                         }
                                     ],
                                     "role": "aside",
@@ -20576,37 +20611,46 @@
                                                 }
                                             }
                                         }
-                                    },
-                                    "type": "grid-cell"
+                                    }
                                 },
                                 {
+                                    "type": "grid-cell",
                                     "nodes": [
                                         {
+                                            "type": "text-block",
                                             "nodes": [
                                                 {
+                                                    "type": "heading1",
+                                                    "styles": {
+                                                        "alignment": {
+                                                            "md": "utils/text/alignLeft",
+                                                            "xl": "utils/text/alignLeft",
+                                                            "xs": "utils/text/alignCenter"
+                                                        }
+                                                    },
                                                     "identifier": "7PVxW",
                                                     "nodes": [
                                                         {
-                                                            "text": "Drag 'n' drop content builder for web apps",
-                                                            "type": "text"
+                                                            "type": "text",
+                                                            "text": "Drag ",
+                                                            "marks": [
+                                                                {
+                                                                    "type": "hyperlink",
+                                                                    "attrs": {
+                                                                        "target": "_blank",
+                                                                        "targetKey": "pages/a4095a4c-5147-1596-23b4-bd77a6c5f6dc"
+                                                                    }
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "text",
+                                                            "text": "'n' drop content builder for web apps"
                                                         }
-                                                    ],
-                                                    "styles": {
-                                                        "alignment": {
-                                                            "md": "utils/text/alignLeft",
-                                                            "xl": "utils/text/alignLeft",
-                                                            "xs": "utils/text/alignCenter"
-                                                        }
-                                                    },
-                                                    "type": "heading1"
+                                                    ]
                                                 },
                                                 {
-                                                    "nodes": [
-                                                        {
-                                                            "text": "Give your users a tool to create professional web pages, forms, email templates and more.",
-                                                            "type": "text"
-                                                        }
-                                                    ],
+                                                    "type": "paragraph",
                                                     "styles": {
                                                         "alignment": {
                                                             "md": "utils/text/alignLeft",
@@ -20614,10 +20658,15 @@
                                                             "xs": "utils/text/alignCenter"
                                                         }
                                                     },
-                                                    "type": "paragraph"
+                                                    "identifier": null,
+                                                    "nodes": [
+                                                        {
+                                                            "type": "text",
+                                                            "text": "Give your users a tool to create professional web pages, forms, email templates and more."
+                                                        }
+                                                    ]
                                                 }
-                                            ],
-                                            "type": "text-block"
+                                            ]
                                         }
                                     ],
                                     "role": "article",
@@ -20681,8 +20730,7 @@
                                                 }
                                             }
                                         }
-                                    },
-                                    "type": "grid-cell"
+                                    }
                                 }
                             ],
                             "styles": {
@@ -20743,13 +20791,15 @@
                                         }
                                     }
                                 }
-                            },
-                            "type": "grid"
+                            }
                         }
-                    ],
+                    ]
+                },
+                {
+                    "type": "layout-section",
                     "styles": {
                         "instance": {
-                            "key": "npxnxrouyk",
+                            "key": "jpoxgffmtq",
                             "size": {
                                 "lg": {
                                     "stretch": false
@@ -20776,21 +20826,20 @@
                             }
                         }
                     },
-                    "type": "layout-section"
-                },
-                {
                     "nodes": [
                         {
+                            "type": "grid",
                             "nodes": [
                                 {
+                                    "type": "grid-cell",
                                     "nodes": [
                                         {
+                                            "type": "picture",
                                             "caption": "editors.png",
-                                            "sourceKey": "uploads/f4f94aa8-269b-9d08-4247-07981b8476c3",
                                             "styles": {
                                                 "appearance": "components/picture/default"
                                             },
-                                            "type": "picture"
+                                            "sourceKey": "uploads/f4f94aa8-269b-9d08-4247-07981b8476c3"
                                         }
                                     ],
                                     "role": "aside",
@@ -20842,21 +20891,16 @@
                                                 }
                                             }
                                         }
-                                    },
-                                    "type": "grid-cell"
+                                    }
                                 },
                                 {
+                                    "type": "grid-cell",
                                     "nodes": [
                                         {
+                                            "type": "text-block",
                                             "nodes": [
                                                 {
-                                                    "identifier": "IKoaG",
-                                                    "nodes": [
-                                                        {
-                                                            "text": "Simple and powerful",
-                                                            "type": "text"
-                                                        }
-                                                    ],
+                                                    "type": "heading2",
                                                     "styles": {
                                                         "alignment": {
                                                             "md": "utils/text/alignLeft",
@@ -20864,82 +20908,97 @@
                                                             "xs": "utils/text/alignCenter"
                                                         }
                                                     },
-                                                    "type": "heading2"
+                                                    "identifier": "IKoaG",
+                                                    "nodes": [
+                                                        {
+                                                            "type": "text",
+                                                            "text": "Simple and powerful"
+                                                        }
+                                                    ]
                                                 },
                                                 {
                                                     "nodes": [
                                                         {
+                                                            "type": "list-item",
                                                             "nodes": [
                                                                 {
+                                                                    "type": "paragraph",
+                                                                    "styles": null,
+                                                                    "identifier": null,
                                                                     "nodes": [
                                                                         {
-                                                                            "text": "first class drag and drop",
-                                                                            "type": "text"
+                                                                            "type": "text",
+                                                                            "text": "first class drag and drop"
                                                                         }
-                                                                    ],
-                                                                    "type": "paragraph"
+                                                                    ]
                                                                 }
-                                                            ],
-                                                            "type": "list-item"
+                                                            ]
                                                         },
                                                         {
+                                                            "type": "list-item",
                                                             "nodes": [
                                                                 {
+                                                                    "type": "paragraph",
+                                                                    "styles": null,
+                                                                    "identifier": null,
                                                                     "nodes": [
                                                                         {
-                                                                            "text": "responsive layouts",
-                                                                            "type": "text"
+                                                                            "type": "text",
+                                                                            "text": "responsive layouts"
                                                                         }
-                                                                    ],
-                                                                    "type": "paragraph"
+                                                                    ]
                                                                 }
-                                                            ],
-                                                            "type": "list-item"
+                                                            ]
                                                         },
                                                         {
+                                                            "type": "list-item",
                                                             "nodes": [
                                                                 {
+                                                                    "type": "paragraph",
+                                                                    "styles": null,
+                                                                    "identifier": null,
                                                                     "nodes": [
                                                                         {
-                                                                            "text": "centralized style management",
-                                                                            "type": "text"
+                                                                            "type": "text",
+                                                                            "text": "centralized style management"
                                                                         }
-                                                                    ],
-                                                                    "type": "paragraph"
+                                                                    ]
                                                                 }
-                                                            ],
-                                                            "type": "list-item"
+                                                            ]
                                                         },
                                                         {
+                                                            "type": "list-item",
                                                             "nodes": [
                                                                 {
+                                                                    "type": "paragraph",
+                                                                    "styles": null,
+                                                                    "identifier": null,
                                                                     "nodes": [
                                                                         {
-                                                                            "text": "website hyperlink consistency",
-                                                                            "type": "text"
+                                                                            "type": "text",
+                                                                            "text": "website hyperlink consistency"
                                                                         }
-                                                                    ],
-                                                                    "type": "paragraph"
+                                                                    ]
                                                                 }
-                                                            ],
-                                                            "type": "list-item"
+                                                            ]
                                                         }
                                                     ],
-                                                    "type": "bulleted-list"
+                                                    "type": "bulleted-list",
+                                                    "styles": null
                                                 }
-                                            ],
-                                            "type": "text-block"
+                                            ]
                                         },
                                         {
-                                            "hyperlink": {
-                                                "target": "_self",
-                                                "targetKey": "pages/55540044-1473-db43-f130-6228f75d572b"
-                                            },
+                                            "type": "button",
                                             "label": "Learn more >",
                                             "styles": {
                                                 "appearance": "components/button/default"
                                             },
-                                            "type": "button"
+                                            "roles": null,
+                                            "hyperlink": {
+                                                "target": "_self",
+                                                "targetKey": "pages/55540044-1473-db43-f130-6228f75d572b"
+                                            }
                                         }
                                     ],
                                     "role": "article",
@@ -21003,8 +21062,7 @@
                                                 }
                                             }
                                         }
-                                    },
-                                    "type": "grid-cell"
+                                    }
                                 }
                             ],
                             "styles": {
@@ -21061,13 +21119,15 @@
                                         }
                                     }
                                 }
-                            },
-                            "type": "grid"
+                            }
                         }
-                    ],
+                    ]
+                },
+                {
+                    "type": "layout-section",
                     "styles": {
                         "instance": {
-                            "key": "jpoxgffmtq",
+                            "key": "awvthoclek",
                             "size": {
                                 "lg": {
                                     "stretch": false
@@ -21094,21 +21154,20 @@
                             }
                         }
                     },
-                    "type": "layout-section"
-                },
-                {
                     "nodes": [
                         {
+                            "type": "grid",
                             "nodes": [
                                 {
+                                    "type": "grid-cell",
                                     "nodes": [
                                         {
+                                            "type": "picture",
                                             "caption": "Picture",
-                                            "sourceKey": "uploads/cc3b22af-b12a-716c-3666-66971360eb09",
                                             "styles": {
                                                 "appearance": "components/picture/default"
                                             },
-                                            "type": "picture"
+                                            "sourceKey": "uploads/cc3b22af-b12a-716c-3666-66971360eb09"
                                         }
                                     ],
                                     "role": "aside",
@@ -21160,21 +21219,16 @@
                                                 }
                                             }
                                         }
-                                    },
-                                    "type": "grid-cell"
+                                    }
                                 },
                                 {
+                                    "type": "grid-cell",
                                     "nodes": [
                                         {
+                                            "type": "text-block",
                                             "nodes": [
                                                 {
-                                                    "identifier": "YUFqr",
-                                                    "nodes": [
-                                                        {
-                                                            "text": "Theme and framework agnostic",
-                                                            "type": "text"
-                                                        }
-                                                    ],
+                                                    "type": "heading2",
                                                     "styles": {
                                                         "alignment": {
                                                             "md": "utils/text/alignLeft",
@@ -21182,68 +21236,81 @@
                                                             "xs": "utils/text/alignCenter"
                                                         }
                                                     },
-                                                    "type": "heading2"
+                                                    "identifier": "YUFqr",
+                                                    "nodes": [
+                                                        {
+                                                            "type": "text",
+                                                            "text": "Theme and framework agnostic"
+                                                        }
+                                                    ]
                                                 },
                                                 {
                                                     "nodes": [
                                                         {
+                                                            "type": "list-item",
                                                             "nodes": [
                                                                 {
+                                                                    "type": "paragraph",
+                                                                    "styles": null,
+                                                                    "identifier": null,
                                                                     "nodes": [
                                                                         {
-                                                                            "text": "stores intents rather than specific markup",
-                                                                            "type": "text"
+                                                                            "type": "text",
+                                                                            "text": "stores intents rather than specific markup"
                                                                         }
-                                                                    ],
-                                                                    "type": "paragraph"
+                                                                    ]
                                                                 }
-                                                            ],
-                                                            "type": "list-item"
+                                                            ]
                                                         },
                                                         {
+                                                            "type": "list-item",
                                                             "nodes": [
                                                                 {
+                                                                    "type": "paragraph",
+                                                                    "styles": null,
+                                                                    "identifier": null,
                                                                     "nodes": [
                                                                         {
-                                                                            "text": "describes everything including page structure",
-                                                                            "type": "text"
+                                                                            "type": "text",
+                                                                            "text": "describes everything including page structure"
                                                                         }
-                                                                    ],
-                                                                    "type": "paragraph"
+                                                                    ]
                                                                 }
-                                                            ],
-                                                            "type": "list-item"
+                                                            ]
                                                         },
                                                         {
+                                                            "type": "list-item",
                                                             "nodes": [
                                                                 {
+                                                                    "type": "paragraph",
+                                                                    "styles": null,
+                                                                    "identifier": null,
                                                                     "nodes": [
                                                                         {
-                                                                            "text": "publishes HTML, markdown, plain text, etc.",
-                                                                            "type": "text"
+                                                                            "type": "text",
+                                                                            "text": "publishes HTML, markdown, plain text, etc."
                                                                         }
-                                                                    ],
-                                                                    "type": "paragraph"
+                                                                    ]
                                                                 }
-                                                            ],
-                                                            "type": "list-item"
+                                                            ]
                                                         }
                                                     ],
-                                                    "type": "bulleted-list"
+                                                    "type": "bulleted-list",
+                                                    "styles": null
                                                 }
-                                            ],
-                                            "type": "text-block"
+                                            ]
                                         },
                                         {
-                                            "hyperlink": {
-                                                "target": "_self",
-                                                "targetKey": "pages/79f3c265-7eab-9418-e364-54a9bb1c85d3"
-                                            },
+                                            "type": "button",
                                             "label": "Learn more >",
                                             "styles": {
                                                 "appearance": "components/button/default"
                                             },
-                                            "type": "button"
+                                            "roles": null,
+                                            "hyperlink": {
+                                                "target": "_self",
+                                                "targetKey": "pages/79f3c265-7eab-9418-e364-54a9bb1c85d3"
+                                            }
                                         }
                                     ],
                                     "role": "article",
@@ -21307,8 +21374,7 @@
                                                 }
                                             }
                                         }
-                                    },
-                                    "type": "grid-cell"
+                                    }
                                 }
                             ],
                             "styles": {
@@ -21367,13 +21433,15 @@
                                         }
                                     }
                                 }
-                            },
-                            "type": "grid"
+                            }
                         }
-                    ],
+                    ]
+                },
+                {
+                    "type": "layout-section",
                     "styles": {
                         "instance": {
-                            "key": "awvthoclek",
+                            "key": "djwbxoulst",
                             "size": {
                                 "lg": {
                                     "stretch": false
@@ -21400,21 +21468,20 @@
                             }
                         }
                     },
-                    "type": "layout-section"
-                },
-                {
                     "nodes": [
                         {
+                            "type": "grid",
                             "nodes": [
                                 {
+                                    "type": "grid-cell",
                                     "nodes": [
                                         {
+                                            "type": "picture",
                                             "caption": "Picture",
-                                            "sourceKey": "uploads/adfbffad-ac01-ed54-fbe0-6253d0c663fd",
                                             "styles": {
                                                 "appearance": "components/picture/default"
                                             },
-                                            "type": "picture"
+                                            "sourceKey": "uploads/adfbffad-ac01-ed54-fbe0-6253d0c663fd"
                                         }
                                     ],
                                     "role": "aside",
@@ -21466,21 +21533,16 @@
                                                 }
                                             }
                                         }
-                                    },
-                                    "type": "grid-cell"
+                                    }
                                 },
                                 {
+                                    "type": "grid-cell",
                                     "nodes": [
                                         {
+                                            "type": "text-block",
                                             "nodes": [
                                                 {
-                                                    "identifier": "CDf7u",
-                                                    "nodes": [
-                                                        {
-                                                            "text": "API-first. Offline-first. Mobile-first.",
-                                                            "type": "text"
-                                                        }
-                                                    ],
+                                                    "type": "heading2",
                                                     "styles": {
                                                         "alignment": {
                                                             "md": "utils/text/alignLeft",
@@ -21488,54 +21550,65 @@
                                                             "xs": "utils/text/alignCenter"
                                                         }
                                                     },
-                                                    "type": "heading2"
+                                                    "identifier": "CDf7u",
+                                                    "nodes": [
+                                                        {
+                                                            "type": "text",
+                                                            "text": "API-first. Offline-first. Mobile-first."
+                                                        }
+                                                    ]
                                                 },
                                                 {
                                                     "nodes": [
                                                         {
+                                                            "type": "list-item",
                                                             "nodes": [
                                                                 {
+                                                                    "type": "paragraph",
+                                                                    "styles": null,
+                                                                    "identifier": null,
                                                                     "nodes": [
                                                                         {
-                                                                            "text": "continues work in absence of network",
-                                                                            "type": "text"
+                                                                            "type": "text",
+                                                                            "text": "continues work in absence of network"
                                                                         }
-                                                                    ],
-                                                                    "type": "paragraph"
+                                                                    ]
                                                                 }
-                                                            ],
-                                                            "type": "list-item"
+                                                            ]
                                                         },
                                                         {
+                                                            "type": "list-item",
                                                             "nodes": [
                                                                 {
+                                                                    "type": "paragraph",
+                                                                    "styles": null,
+                                                                    "identifier": null,
                                                                     "nodes": [
                                                                         {
-                                                                            "text": "supports \"touch\" and runs on any device",
-                                                                            "type": "text"
+                                                                            "type": "text",
+                                                                            "text": "supports \"touch\" and runs on any device"
                                                                         }
-                                                                    ],
-                                                                    "type": "paragraph"
+                                                                    ]
                                                                 }
-                                                            ],
-                                                            "type": "list-item"
+                                                            ]
                                                         }
                                                     ],
-                                                    "type": "bulleted-list"
+                                                    "type": "bulleted-list",
+                                                    "styles": null
                                                 }
-                                            ],
-                                            "type": "text-block"
+                                            ]
                                         },
                                         {
-                                            "hyperlink": {
-                                                "target": "_self",
-                                                "targetKey": "pages/79f3c265-7eab-9418-e364-54a9bb1c85d3"
-                                            },
+                                            "type": "button",
                                             "label": "Learn more >",
                                             "styles": {
                                                 "appearance": "components/button/default"
                                             },
-                                            "type": "button"
+                                            "roles": null,
+                                            "hyperlink": {
+                                                "target": "_self",
+                                                "targetKey": "pages/79f3c265-7eab-9418-e364-54a9bb1c85d3"
+                                            }
                                         }
                                     ],
                                     "role": "article",
@@ -21599,8 +21672,7 @@
                                                 }
                                             }
                                         }
-                                    },
-                                    "type": "grid-cell"
+                                    }
                                 }
                             ],
                             "styles": {
@@ -21659,13 +21731,15 @@
                                         }
                                     }
                                 }
-                            },
-                            "type": "grid"
+                            }
                         }
-                    ],
+                    ]
+                },
+                {
+                    "type": "layout-section",
                     "styles": {
                         "instance": {
-                            "key": "djwbxoulst",
+                            "key": "ukacuznpsw",
                             "size": {
                                 "lg": {
                                     "stretch": false
@@ -21692,21 +21766,20 @@
                             }
                         }
                     },
-                    "type": "layout-section"
-                },
-                {
                     "nodes": [
                         {
+                            "type": "grid",
                             "nodes": [
                                 {
+                                    "type": "grid-cell",
                                     "nodes": [
                                         {
+                                            "type": "picture",
                                             "caption": "Picture",
-                                            "sourceKey": "uploads/5b9a572c-5ede-0da1-1ffa-f2ce06ba0fae",
                                             "styles": {
                                                 "appearance": "components/picture/default"
                                             },
-                                            "type": "picture"
+                                            "sourceKey": "uploads/5b9a572c-5ede-0da1-1ffa-f2ce06ba0fae"
                                         }
                                     ],
                                     "role": "aside",
@@ -21758,37 +21831,33 @@
                                                 }
                                             }
                                         }
-                                    },
-                                    "type": "grid-cell"
+                                    }
                                 },
                                 {
+                                    "type": "grid-cell",
                                     "nodes": [
                                         {
+                                            "type": "text-block",
                                             "nodes": [
                                                 {
+                                                    "type": "heading2",
+                                                    "styles": {
+                                                        "alignment": {
+                                                            "md": "utils/text/alignLeft",
+                                                            "xl": "utils/text/alignLeft",
+                                                            "xs": "utils/text/alignCenter"
+                                                        }
+                                                    },
                                                     "identifier": "00cqx",
                                                     "nodes": [
                                                         {
-                                                            "text": "Built for multiple UI frameworks",
-                                                            "type": "text"
+                                                            "type": "text",
+                                                            "text": "Built for multiple UI frameworks"
                                                         }
-                                                    ],
-                                                    "styles": {
-                                                        "alignment": {
-                                                            "md": "utils/text/alignLeft",
-                                                            "xl": "utils/text/alignLeft",
-                                                            "xs": "utils/text/alignCenter"
-                                                        }
-                                                    },
-                                                    "type": "heading2"
+                                                    ]
                                                 },
                                                 {
-                                                    "nodes": [
-                                                        {
-                                                            "text": "Comes with components for most popular UI frameworks like Vue, Knockout, Angular and React.",
-                                                            "type": "text"
-                                                        }
-                                                    ],
+                                                    "type": "paragraph",
                                                     "styles": {
                                                         "alignment": {
                                                             "md": "utils/text/alignLeft",
@@ -21796,21 +21865,27 @@
                                                             "xs": "utils/text/alignCenter"
                                                         }
                                                     },
-                                                    "type": "paragraph"
+                                                    "identifier": null,
+                                                    "nodes": [
+                                                        {
+                                                            "type": "text",
+                                                            "text": "Comes with components for most popular UI frameworks like Vue, Knockout, Angular and React."
+                                                        }
+                                                    ]
                                                 }
-                                            ],
-                                            "type": "text-block"
+                                            ]
                                         },
                                         {
-                                            "hyperlink": {
-                                                "target": "_self",
-                                                "targetKey": "pages/79f3c265-7eab-9418-e364-54a9bb1c85d3"
-                                            },
+                                            "type": "button",
                                             "label": "Learn more >",
                                             "styles": {
                                                 "appearance": "components/button/default"
                                             },
-                                            "type": "button"
+                                            "roles": null,
+                                            "hyperlink": {
+                                                "target": "_self",
+                                                "targetKey": "pages/79f3c265-7eab-9418-e364-54a9bb1c85d3"
+                                            }
                                         }
                                     ],
                                     "role": "article",
@@ -21874,8 +21949,7 @@
                                                 }
                                             }
                                         }
-                                    },
-                                    "type": "grid-cell"
+                                    }
                                 }
                             ],
                             "styles": {
@@ -21932,13 +22006,15 @@
                                         }
                                     }
                                 }
-                            },
-                            "type": "grid"
+                            }
                         }
-                    ],
+                    ]
+                },
+                {
+                    "type": "layout-section",
                     "styles": {
                         "instance": {
-                            "key": "ukacuznpsw",
+                            "key": "yhpuqfxzzi",
                             "size": {
                                 "lg": {
                                     "stretch": false
@@ -21949,9 +22025,6 @@
                                 "sm": {
                                     "stretch": false
                                 },
-                                "xl": {
-                                    "stretch": false
-                                },
                                 "xs": {
                                     "stretch": false
                                 }
@@ -21960,46 +22033,46 @@
                                 "lg": "none",
                                 "md": "none",
                                 "sm": "none",
-                                "xl": "none",
                                 "xs": "none"
                             }
                         }
                     },
-                    "type": "layout-section"
-                },
-                {
                     "nodes": [
                         {
+                            "type": "grid",
                             "nodes": [
                                 {
+                                    "type": "grid-cell",
                                     "nodes": [
                                         {
+                                            "type": "text-block",
                                             "nodes": [
                                                 {
+                                                    "type": "formatted",
+                                                    "styles": null,
+                                                    "identifier": null,
                                                     "nodes": [
                                                         {
-                                                            "text": "> git clone https://github.com/paperbits/paperbits-demo.git",
-                                                            "type": "text"
+                                                            "type": "text",
+                                                            "text": "> git clone https://github.com/paperbits/paperbits-demo.git"
                                                         },
                                                         {
                                                             "type": "break"
                                                         },
                                                         {
-                                                            "text": "> npm install",
-                                                            "type": "text"
+                                                            "type": "text",
+                                                            "text": "> npm install"
                                                         },
                                                         {
                                                             "type": "break"
                                                         },
                                                         {
-                                                            "text": "> npm start",
-                                                            "type": "text"
+                                                            "type": "text",
+                                                            "text": "> npm start"
                                                         }
-                                                    ],
-                                                    "type": "formatted"
+                                                    ]
                                                 }
-                                            ],
-                                            "type": "text-block"
+                                            ]
                                         }
                                     ],
                                     "role": "aside",
@@ -22051,37 +22124,33 @@
                                                 }
                                             }
                                         }
-                                    },
-                                    "type": "grid-cell"
+                                    }
                                 },
                                 {
+                                    "type": "grid-cell",
                                     "nodes": [
                                         {
+                                            "type": "text-block",
                                             "nodes": [
                                                 {
+                                                    "type": "heading2",
+                                                    "styles": {
+                                                        "alignment": {
+                                                            "md": "utils/text/alignLeft",
+                                                            "xl": "utils/text/alignLeft",
+                                                            "xs": "utils/text/alignCenter"
+                                                        }
+                                                    },
                                                     "identifier": "b3NB4",
                                                     "nodes": [
                                                         {
-                                                            "text": "Easy to get started",
-                                                            "type": "text"
+                                                            "type": "text",
+                                                            "text": "Easy to get started"
                                                         }
-                                                    ],
-                                                    "styles": {
-                                                        "alignment": {
-                                                            "md": "utils/text/alignLeft",
-                                                            "xl": "utils/text/alignLeft",
-                                                            "xs": "utils/text/alignCenter"
-                                                        }
-                                                    },
-                                                    "type": "heading2"
+                                                    ]
                                                 },
                                                 {
-                                                    "nodes": [
-                                                        {
-                                                            "text": "Clone, install packages and launch!",
-                                                            "type": "text"
-                                                        }
-                                                    ],
+                                                    "type": "paragraph",
                                                     "styles": {
                                                         "alignment": {
                                                             "md": "utils/text/alignLeft",
@@ -22089,21 +22158,27 @@
                                                             "xs": "utils/text/alignCenter"
                                                         }
                                                     },
-                                                    "type": "paragraph"
+                                                    "identifier": null,
+                                                    "nodes": [
+                                                        {
+                                                            "type": "text",
+                                                            "text": "Clone, install packages and launch!"
+                                                        }
+                                                    ]
                                                 }
-                                            ],
-                                            "type": "text-block"
+                                            ]
                                         },
                                         {
-                                            "hyperlink": {
-                                                "target": "_self",
-                                                "targetKey": "pages/e2d71b1d-6201-7d11-125d-b7118a65f13c"
-                                            },
+                                            "type": "button",
                                             "label": "Fork on GitHub >",
                                             "styles": {
                                                 "appearance": "components/button/default"
                                             },
-                                            "type": "button"
+                                            "roles": null,
+                                            "hyperlink": {
+                                                "target": "_self",
+                                                "targetKey": "pages/e2d71b1d-6201-7d11-125d-b7118a65f13c"
+                                            }
                                         }
                                     ],
                                     "role": "article",
@@ -22167,8 +22242,7 @@
                                                 }
                                             }
                                         }
-                                    },
-                                    "type": "grid-cell"
+                                    }
                                 }
                             ],
                             "styles": {
@@ -22225,13 +22299,15 @@
                                         }
                                     }
                                 }
-                            },
-                            "type": "grid"
+                            }
                         }
-                    ],
+                    ]
+                },
+                {
+                    "type": "layout-section",
                     "styles": {
                         "instance": {
-                            "key": "yhpuqfxzzi",
+                            "key": "thebmpthlc",
                             "size": {
                                 "lg": {
                                     "stretch": false
@@ -22250,77 +22326,77 @@
                                 "lg": "none",
                                 "md": "none",
                                 "sm": "none",
+                                "xl": "none",
                                 "xs": "none"
                             }
                         }
                     },
-                    "type": "layout-section"
-                },
-                {
                     "nodes": [
                         {
+                            "type": "grid",
                             "nodes": [
                                 {
+                                    "type": "grid-cell",
                                     "nodes": [
                                         {
+                                            "type": "text-block",
                                             "nodes": [
                                                 {
-                                                    "identifier": "vleGT",
-                                                    "nodes": [
-                                                        {
-                                                            "text": "Trusted by enterprises",
-                                                            "type": "text"
-                                                        }
-                                                    ],
+                                                    "type": "heading2",
                                                     "styles": {
                                                         "alignment": {
                                                             "xl": "utils/text/alignCenter",
                                                             "xs": "utils/text/alignCenter"
                                                         }
                                                     },
-                                                    "type": "heading2"
+                                                    "identifier": "vleGT",
+                                                    "nodes": [
+                                                        {
+                                                            "type": "text",
+                                                            "text": "Trusted by enterprises"
+                                                        }
+                                                    ]
                                                 }
-                                            ],
-                                            "type": "text-block"
+                                            ]
                                         },
                                         {
+                                            "type": "picture",
                                             "caption": "Azure API Management Developer portal",
                                             "height": "159",
+                                            "styles": {
+                                                "appearance": "components/picture/default"
+                                            },
+                                            "sourceKey": "uploads/c451c91e-2e8f-7fc9-2373-ae8ef9f0f154",
                                             "hyperlink": {
                                                 "target": "_self",
                                                 "targetKey": "urls/71c1e85b-7796-f171-9126-a4725c67b7f9"
-                                            },
-                                            "sourceKey": "uploads/c451c91e-2e8f-7fc9-2373-ae8ef9f0f154",
+                                            }
+                                        },
+                                        {
+                                            "type": "picture",
+                                            "caption": "Hostme - Modern Restaurant Reservation & Table Management Solution.",
+                                            "height": "150",
                                             "styles": {
                                                 "appearance": "components/picture/default"
                                             },
-                                            "type": "picture"
-                                        },
-                                        {
-                                            "caption": "Hostme - Modern Restaurant Reservation & Table Management Solution.",
-                                            "height": "150",
+                                            "sourceKey": "uploads/50c850db-1592-cd5e-4327-a68802e5826a",
                                             "hyperlink": {
                                                 "target": "_self",
                                                 "targetKey": "urls/a83d9114-d34d-7122-693a-7485a2b8ecce"
-                                            },
-                                            "sourceKey": "uploads/50c850db-1592-cd5e-4327-a68802e5826a",
+                                            }
+                                        },
+                                        {
+                                            "type": "picture",
+                                            "caption": "CEMEX Go Developer Center",
+                                            "height": "140",
                                             "styles": {
                                                 "appearance": "components/picture/default"
                                             },
-                                            "type": "picture"
-                                        },
-                                        {
-                                            "caption": "CEMEX Go Developer Center",
-                                            "height": "140",
+                                            "sourceKey": "uploads/6ed3bd24-4cd4-9bfc-48dc-97f62a762e02",
                                             "hyperlink": {
                                                 "target": "_self",
                                                 "targetKey": "urls/45dba6c9-1fc8-db9d-9bfa-b5462dfee0ff"
-                                            },
-                                            "sourceKey": "uploads/6ed3bd24-4cd4-9bfc-48dc-97f62a762e02",
-                                            "styles": {
-                                                "appearance": "components/picture/default"
-                                            },
-                                            "type": "picture"
+                                            }
                                         }
                                     ],
                                     "role": "article",
@@ -22358,8 +22434,7 @@
                                                 }
                                             }
                                         }
-                                    },
-                                    "type": "grid-cell"
+                                    }
                                 }
                             ],
                             "styles": {
@@ -22408,13 +22483,15 @@
                                         }
                                     }
                                 }
-                            },
-                            "type": "grid"
+                            }
                         }
-                    ],
+                    ]
+                },
+                {
+                    "type": "layout-section",
                     "styles": {
                         "instance": {
-                            "key": "thebmpthlc",
+                            "key": "mnkewrveid",
                             "size": {
                                 "lg": {
                                     "stretch": false
@@ -22438,24 +22515,18 @@
                             }
                         }
                     },
-                    "type": "layout-section"
-                },
-                {
                     "nodes": [
                         {
+                            "type": "grid",
                             "nodes": [
                                 {
+                                    "type": "grid-cell",
                                     "nodes": [
                                         {
+                                            "type": "text-block",
                                             "nodes": [
                                                 {
-                                                    "identifier": "dlKOm",
-                                                    "nodes": [
-                                                        {
-                                                            "text": "Do you like it?",
-                                                            "type": "text"
-                                                        }
-                                                    ],
+                                                    "type": "heading2",
                                                     "styles": {
                                                         "alignment": {
                                                             "md": "utils/text/alignLeft",
@@ -22463,36 +22534,43 @@
                                                             "xs": "utils/text/alignCenter"
                                                         }
                                                     },
-                                                    "type": "heading2"
-                                                },
-                                                {
+                                                    "identifier": "dlKOm",
                                                     "nodes": [
                                                         {
-                                                            "text": "We're working hard to make the product better and the best reward for our work is your recognition. Help to bring more of it by giving us a star on GitHub.",
-                                                            "type": "text"
+                                                            "type": "text",
+                                                            "text": "Do you like it?"
                                                         }
-                                                    ],
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "paragraph",
                                                     "styles": {
                                                         "alignment": {
                                                             "md": "utils/text/alignLeft",
                                                             "xs": "utils/text/alignCenter"
                                                         }
                                                     },
-                                                    "type": "paragraph"
+                                                    "identifier": null,
+                                                    "nodes": [
+                                                        {
+                                                            "type": "text",
+                                                            "text": "We're working hard to make the product better and the best reward for our work is your recognition. Help to bring more of it by giving us a star on GitHub."
+                                                        }
+                                                    ]
                                                 }
-                                            ],
-                                            "type": "text-block"
+                                            ]
                                         },
                                         {
-                                            "hyperlink": {
-                                                "target": "_self",
-                                                "targetKey": "urls/aad6187b-08cb-d1ab-d373-c19ae9686efb"
-                                            },
+                                            "type": "button",
                                             "label": "Star on Github",
                                             "styles": {
                                                 "appearance": "components/button/einvh"
                                             },
-                                            "type": "button"
+                                            "roles": null,
+                                            "hyperlink": {
+                                                "target": "_self",
+                                                "targetKey": "urls/aad6187b-08cb-d1ab-d373-c19ae9686efb"
+                                            }
                                         }
                                     ],
                                     "role": "aside",
@@ -22562,21 +22640,16 @@
                                                 }
                                             }
                                         }
-                                    },
-                                    "type": "grid-cell"
+                                    }
                                 },
                                 {
+                                    "type": "grid-cell",
                                     "nodes": [
                                         {
+                                            "type": "text-block",
                                             "nodes": [
                                                 {
-                                                    "identifier": "BWth9",
-                                                    "nodes": [
-                                                        {
-                                                            "text": "Stay in touch",
-                                                            "type": "text"
-                                                        }
-                                                    ],
+                                                    "type": "heading2",
                                                     "styles": {
                                                         "alignment": {
                                                             "md": "utils/text/alignLeft",
@@ -22584,73 +22657,54 @@
                                                             "xs": "utils/text/alignCenter"
                                                         }
                                                     },
-                                                    "type": "heading2"
-                                                },
-                                                {
+                                                    "identifier": "BWth9",
                                                     "nodes": [
                                                         {
-                                                            "text": "Paperbits is the work in progress. Sign up for our newsletter to know what we're working on and be the first in line when we announce new features.",
-                                                            "type": "text"
+                                                            "type": "text",
+                                                            "text": "Stay in touch"
                                                         }
-                                                    ],
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "paragraph",
                                                     "styles": {
                                                         "alignment": {
                                                             "md": "utils/text/alignLeft",
                                                             "xs": "utils/text/alignCenter"
                                                         }
                                                     },
-                                                    "type": "paragraph"
+                                                    "identifier": null,
+                                                    "nodes": [
+                                                        {
+                                                            "type": "text",
+                                                            "text": "Paperbits is the work in progress. Sign up for our newsletter to know what we're working on and be the first in line when we announce new features."
+                                                        }
+                                                    ]
                                                 }
-                                            ],
-                                            "type": "text-block"
+                                            ]
                                         },
                                         {
-                                            "encType": "application/x-www-form-urlencoded",
+                                            "type": "form",
                                             "formAction": "",
                                             "formMethod": "post",
                                             "formTarget": "_self",
+                                            "encType": "application/x-www-form-urlencoded",
                                             "isInline": true,
                                             "nodes": [
                                                 {
-                                                    "inputProperties": [
-                                                        {
-                                                            "propertyName": "inputName",
-                                                            "propertyValue": "email"
-                                                        },
-                                                        {
-                                                            "propertyName": "placeholderText",
-                                                            "propertyValue": "Enter your email"
-                                                        },
-                                                        {
-                                                            "propertyName": "help",
-                                                            "propertyValue": ""
-                                                        },
-                                                        {
-                                                            "propertyName": "labelText",
-                                                            "propertyValue": ""
-                                                        },
-                                                        {
-                                                            "propertyName": "maxLength"
-                                                        },
-                                                        {
-                                                            "propertyName": "isRequired",
-                                                            "propertyValue": true
-                                                        },
-                                                        {
-                                                            "propertyName": "isReadonly"
-                                                        }
-                                                    ],
-                                                    "type": "input:text"
+                                                    "type": "input:text",
+                                                    "styles": {
+                                                        "appearance": "components/formControl/default"
+                                                    }
                                                 },
                                                 {
+                                                    "type": "input:submit",
                                                     "label": "Subscribe",
                                                     "styles": {
                                                         "appearance": "components/button/primary"
-                                                    },
-                                                    "type": "input:submit"
+                                                    }
                                                 }
-                                            ],
-                                            "type": "form"
+                                            ]
                                         }
                                     ],
                                     "role": "article",
@@ -22720,8 +22774,7 @@
                                                 }
                                             }
                                         }
-                                    },
-                                    "type": "grid-cell"
+                                    }
                                 }
                             ],
                             "styles": {
@@ -22780,40 +22833,11 @@
                                         }
                                     }
                                 }
-                            },
-                            "type": "grid"
-                        }
-                    ],
-                    "styles": {
-                        "instance": {
-                            "key": "mnkewrveid",
-                            "size": {
-                                "lg": {
-                                    "stretch": false
-                                },
-                                "md": {
-                                    "stretch": false
-                                },
-                                "sm": {
-                                    "stretch": false
-                                },
-                                "xs": {
-                                    "stretch": false
-                                }
-                            },
-                            "stickTo": {
-                                "lg": "none",
-                                "md": "none",
-                                "sm": "none",
-                                "xl": "none",
-                                "xs": "none"
                             }
                         }
-                    },
-                    "type": "layout-section"
+                    ]
                 }
-            ],
-            "type": "page"
+            ]
         },
         "new-email-template": {
             "nodes": [
@@ -23070,71 +23094,85 @@
                 {
                     "key": "7e903f51-905d-9eae-e183-2434353b507e",
                     "label": "Demo",
-                    "targetKey": "urls/c59fcf7f-fb27-7c27-08b5-61684e11912d"
+                    "targetKey": "urls/c59fcf7f-fb27-7c27-08b5-61684e11912d",
+                    "targetWindow": "_blank",
+                    "navigationItems": null
                 },
                 {
                     "key": "461e475c-cd0b-26ea-98bf-78824db10876",
                     "label": "Get started",
-                    "targetKey": "pages/e2d71b1d-6201-7d11-125d-b7118a65f13c"
+                    "targetKey": "pages/e2d71b1d-6201-7d11-125d-b7118a65f13c",
+                    "navigationItems": null
                 },
                 {
                     "key": "fc272239-a4dd-d336-da31-dcc462148330",
                     "label": "Features",
-                    "targetKey": "pages/55540044-1473-db43-f130-6228f75d572b"
+                    "targetKey": "pages/55540044-1473-db43-f130-6228f75d572b",
+                    "targetWindow": "_blank",
+                    "navigationItems": null
                 },
                 {
                     "key": "a0241d14-fa74-dbed-c0d8-8429de7ef86c",
                     "label": "Blog",
-                    "targetKey": "pages/0ddd696f-4628-ea43-9e4e-844bd7ed9f9b"
+                    "targetKey": "pages/0ddd696f-4628-ea43-9e4e-844bd7ed9f9b",
+                    "navigationItems": null
                 },
                 {
                     "key": "1029ef93-1930-6c59-a86c-615daa2da695",
                     "label": "License",
-                    "targetKey": "pages/0f5b9c5a-0bc2-bb47-3658-8a636bd88c54"
+                    "targetKey": "pages/0f5b9c5a-0bc2-bb47-3658-8a636bd88c54",
+                    "navigationItems": null
                 },
                 {
                     "key": "e815a458-4562-7c58-8f11-9c65334d0d46",
                     "label": "Github",
-                    "targetKey": "urls/aad6187b-08cb-d1ab-d373-c19ae9686efb"
+                    "targetKey": "urls/aad6187b-08cb-d1ab-d373-c19ae9686efb",
+                    "navigationItems": null
                 }
             ]
         },
         {
             "key": "328e5870-b83f-ae04-10da-e2d30374f181",
             "label": "Wiki",
+            "targetKey": "pages/e2d71b1d-6201-7d11-125d-b7118a65f13c",
             "navigationItems": [
                 {
                     "key": "871eec63-ec68-8422-b593-8768c5ad6c0d",
                     "label": "Getting started",
-                    "targetKey": "pages/e2d71b1d-6201-7d11-125d-b7118a65f13c"
+                    "targetKey": "pages/e2d71b1d-6201-7d11-125d-b7118a65f13c",
+                    "navigationItems": null
                 },
                 {
                     "key": "e9677ef2-a388-3627-62ac-e046694b2e76",
                     "label": "Widget anatomy",
-                    "targetKey": "pages/dbdf346e-867f-0e23-0117-450584eacaba"
+                    "targetKey": "pages/dbdf346e-867f-0e23-0117-450584eacaba",
+                    "navigationItems": null
                 },
                 {
                     "key": "714646b1-9e7a-971d-6078-eda64d6ef4c2",
                     "label": "UI frameworks",
-                    "targetKey": "pages/f5438b1b-c61b-61c6-adf9-9886bd49cb48"
+                    "targetKey": "pages/f5438b1b-c61b-61c6-adf9-9886bd49cb48",
+                    "navigationItems": null
                 },
                 {
                     "key": "2b13a5ac-c179-d69d-d970-787b5d092cdb",
                     "label": "Forms module",
-                    "targetKey": "pages/0bf536c4-ed99-7251-b993-67eaa4053efc"
+                    "targetKey": "pages/0bf536c4-ed99-7251-b993-67eaa4053efc",
+                    "navigationItems": null
                 },
                 {
                     "key": "ebf29f2f-7fc7-136b-1cda-c41fbb5e62fe",
                     "label": "Build system",
-                    "targetKey": "pages/918b7e2e-1b0a-5ab8-753b-7be6a451239c"
+                    "targetKey": "pages/918b7e2e-1b0a-5ab8-753b-7be6a451239c",
+                    "navigationItems": null
                 },
                 {
                     "key": "9606dc0e-98d7-b321-9691-d3dc095dae61",
                     "label": "Styles module",
-                    "targetKey": "pages/0ec6f480-9518-c546-365a-3bf3af1361f0"
+                    "targetKey": "pages/0ec6f480-9518-c546-365a-3bf3af1361f0",
+                    "navigationItems": null
                 }
-            ],
-            "targetKey": "pages/e2d71b1d-6201-7d11-125d-b7118a65f13c"
+            ]
         },
         {
             "key": "6379306c-6f07-b85a-df77-0229d0d73f32",
@@ -23142,7 +23180,8 @@
             "navigationItems": [
                 {
                     "key": "9e12d761-27df-fa13-a297-afa124d6a7bb",
-                    "label": "Sign out"
+                    "label": "Sign out",
+                    "navigationItems": null
                 }
             ]
         },
@@ -23153,22 +23192,26 @@
                 {
                     "key": "655bdb18-6b67-1f40-8012-6864a2f95b41",
                     "label": "Getting started",
-                    "targetKey": "pages/e2d71b1d-6201-7d11-125d-b7118a65f13c"
+                    "targetKey": "pages/e2d71b1d-6201-7d11-125d-b7118a65f13c",
+                    "navigationItems": null
                 },
                 {
                     "key": "709065ae-20c8-cbc2-1c55-65f51ca81fe0",
                     "label": "Features",
-                    "targetKey": "pages/55540044-1473-db43-f130-6228f75d572b"
+                    "targetKey": "pages/55540044-1473-db43-f130-6228f75d572b",
+                    "navigationItems": null
                 },
                 {
                     "key": "20d4012f-45b3-126b-d69b-bc0693e4562a",
                     "label": "Blog",
-                    "targetKey": "pages/0ddd696f-4628-ea43-9e4e-844bd7ed9f9b"
+                    "targetKey": "pages/0ddd696f-4628-ea43-9e4e-844bd7ed9f9b",
+                    "navigationItems": null
                 },
                 {
                     "key": "d0390421-920e-0ce1-7ae0-a7f7b5c57680",
                     "label": "F.A.Q.",
-                    "targetKey": "pages/db81ad2d-8cab-9165-32ee-056b16326183"
+                    "targetKey": "pages/db81ad2d-8cab-9165-32ee-056b16326183",
+                    "navigationItems": null
                 }
             ]
         },
@@ -23179,17 +23222,20 @@
                 {
                     "key": "f77730e8-24fc-f65a-287c-d5fac0818d6f",
                     "label": "Pricing",
-                    "targetKey": "pages/0f5b9c5a-0bc2-bb47-3658-8a636bd88c54"
+                    "targetKey": "pages/0f5b9c5a-0bc2-bb47-3658-8a636bd88c54",
+                    "navigationItems": null
                 },
                 {
                     "key": "49c61ce6-48ca-767e-8c15-ca688d194b43",
                     "label": "Commercial",
-                    "targetKey": "pages/96c7404e-7c0c-356f-e17f-453b923fb3aa"
+                    "targetKey": "pages/96c7404e-7c0c-356f-e17f-453b923fb3aa",
+                    "navigationItems": null
                 },
                 {
                     "key": "d1f49635-fe97-b896-f9ef-99192b80ba7a",
                     "label": "MIT",
-                    "targetKey": "pages/9cc8dbff-b351-b878-214d-3a1357c81eb6"
+                    "targetKey": "pages/9cc8dbff-b351-b878-214d-3a1357c81eb6",
+                    "navigationItems": null
                 }
             ]
         },
@@ -23200,12 +23246,14 @@
                 {
                     "key": "7857828a-f833-385e-15e2-b5d275da3ae0",
                     "label": "Our story",
-                    "targetKey": "pages/a4095a4c-5147-1596-23b4-bd77a6c5f6dc"
+                    "targetKey": "pages/a4095a4c-5147-1596-23b4-bd77a6c5f6dc",
+                    "navigationItems": null
                 },
                 {
                     "key": "9aec2a8f-a35c-5857-b6a1-0c21828ab976",
                     "label": "Privacy",
-                    "targetKey": "pages/9ee6da1b-9c67-a5b2-fb69-17dc5859f52c"
+                    "targetKey": "pages/9ee6da1b-9c67-a5b2-fb69-17dc5859f52c",
+                    "navigationItems": null
                 }
             ]
         },
@@ -23216,22 +23264,26 @@
                 {
                     "key": "cc0fc372-9ba5-d761-c70f-2d3a618c700f",
                     "label": "Support",
-                    "targetKey": "urls/7e33e979-8a6d-3834-c605-8d60d18e3d11"
+                    "targetKey": "urls/7e33e979-8a6d-3834-c605-8d60d18e3d11",
+                    "navigationItems": null
                 },
                 {
                     "key": "872891f3-08fe-a439-30a3-2a5f88d29b48",
                     "label": "Gitter",
-                    "targetKey": "urls/ca48a393-de5e-1cdc-6d7f-27d67aa054f9"
+                    "targetKey": "urls/ca48a393-de5e-1cdc-6d7f-27d67aa054f9",
+                    "navigationItems": null
                 },
                 {
                     "key": "1e2277e0-cdaa-c1ca-63ef-23c0f2483fde",
                     "label": "Twitter",
-                    "targetKey": "urls/5bd8f50b-997b-c014-322c-928541b22ae9"
+                    "targetKey": "urls/5bd8f50b-997b-c014-322c-928541b22ae9",
+                    "navigationItems": null
                 },
                 {
                     "key": "2bb92db2-c143-f620-c9e3-bc2a965995dc",
                     "label": "LinkedIn",
-                    "targetKey": "urls/e7da07b8-d303-a860-acc7-9a01ea87e88a"
+                    "targetKey": "urls/e7da07b8-d303-a860-acc7-9a01ea87e88a",
+                    "navigationItems": null
                 }
             ]
         }
@@ -24757,7 +24809,7 @@
                 "key": "fonts/icons",
                 "variants": [
                     {
-                        "file": "/styles/fonts/icons.ttf",
+                        "file": "data:font/ttf;base64,T1RUTwAJAIAAAwAQQ0ZGIJH9AnIAAAQ8AAAEdU9TLzJJGmH5AAABAAAAAGBjbWFwy9ap4AAAA8gAAABUaGVhZBhqkxkAAACcAAAANmhoZWEFIwFAAAAA1AAAACRobXR4CQAACAAACLQAAAAcbWF4cAAHUAAAAAD4AAAABm5hbWWEsRwTAAABYAAAAmdwb3N0AAMAAAAABBwAAAAgAAEAAAABAABCbbBNXw889QADAZAAAAAA264piQAAAADbrimJ////xwH4AbgAAAADAAIAAAAAAAAAAQAAAyD/OAAAAgAAAAAAAgEAAQAAAAAAAAAAAAAAAAAAAAcAAFAAAAcAAAADAYAB9AAFAAACigK7AAAAjAKKArsAAAHfADEBAgAAAAAAAAAAAAAAAAAAAAEQAAAAAAAAAAAAAABYWFhYAEDg0/AXAyD/OAAAAbgAOQAAAAEAAAAAAZABuAAAAAAAAAAAACIBngABAAAAAAAAAAEALgABAAAAAAABAAcAAAABAAAAAAACAAYAFQABAAAAAAADABAAmQABAAAAAAAEAA4AJwABAAAAAAAFAAsAeAABAAAAAAAGAA0AUQABAAAAAAAHAAEALgABAAAAAAAIAAEALgABAAAAAAAJAAEALgABAAAAAAAKAAEALgABAAAAAAALAAEALgABAAAAAAAMAAEALgABAAAAAAANAAEALgABAAAAAAAOAAEALgABAAAAAAAQAAcAAAABAAAAAAARAAYAFQADAAEECQAAAAIAQwADAAEECQABAA4ABwADAAEECQACAAwAGwADAAEECQADACAAqQADAAEECQAEABwANQADAAEECQAFABYAgwADAAEECQAGABoAXgADAAEECQAHAAIAQwADAAEECQAIAAIAQwADAAEECQAJAAIAQwADAAEECQAKAAIAQwADAAEECQALAAIAQwADAAEECQAMAAIAQwADAAEECQANAAIAQwADAAEECQAOAAIAQwADAAEECQAQAA4ABwADAAEECQARAAwAG015SWNvbnMATQB5AEkAYwBvAG4Ac01lZGl1bQBNAGUAZABpAHUAbU15SWNvbnMgTWVkaXVtAE0AeQBJAGMAbwBuAHMAIABNAGUAZABpAHUAbU15SWNvbnNNZWRpdW0ATQB5AEkAYwBvAG4AcwBNAGUAZABpAHUAbVZlcnNpb24gMC4xAFYAZQByAHMAaQBvAG4AIAAwAC4AMSA6TXlJY29ucyBNZWRpdW0AIAA6AE0AeQBJAGMAbwBuAHMAIABNAGUAZABpAHUAbQAAAAABAAMAAQAAAAwABABIAAAADgAIAAIABuDT5inqAuoF6gbwF///AADg0+Yp6gLqBeoG8Bf//x8zGdwV/xX9Ff0P7QABAAAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEABAEAAQEBDk15SWNvbnNNZWRpdW0AAQEBO/gbAPgcAvgdA/geBItS+bT4lAUdAAAArA8dAAAAuRGLHQAABHUSHgoAJf8eDx4PHgoAJf8eDx4PDAcACQEBDBohJy0zQEVJVmVyc2lvbiAwLjFNeUljb25zIE1lZGl1bU15SWNvbnNNZWRpdW16b29tLTJtZW51LThzaW1wbGUtcmVtb3ZlY2xvY2tJY29uAAAAAYsBjAGNAY4BjwGPAAcCAAEAAwDmASYBuQJ+AzoDqosO95T3hrcVi4sFXboFlpyRnougCIuLBYuehp2CmwiCm36Ye5UIepR5kHiLCHiLeYZ7gQh6gX5+gXsIgXqGeYt4CIt4kHmVewiUeph+m4IIm4Kdhp6LCIuLBaCLnpGclgiLiwW6XQWNiY6KjosIjouNjI2NCIuLBZqaBY2NjI6LjgiLjoqNiY0I+3H0FYuLBYuaj5mTmAiSmJWWmJMImJKZj5qLCJqLmYeYgwiYg5WAk34Ikn6PfYt8CIt8h32DfgiDfoGBfoMIfoN9h3yLCHyLfY9+kwh+koGVg5gIg5iHmYuaCA73lIv3aRWLgQWLgAX3lIsFi6AF+5SLBYtBFYuABYuABfeUiwWLoQX7lIsFi0AVi4EFi4AF95SLBYugBfuUiwUO95S592YVi4sFhoaJiYuLCIuKl36kcgiLiwWvZgVnZgVycn9+i4oIi4qNiZCHCJCGjomLiwiLi5eXpKQIi4sFsK8F1kEFkpIFkJCNjouLCIuLf5dypAiLiwVnsAWvsAWkpJeYi4wIi4yJjoaPCIaPiY2LiwiKi35/cnIIi4sFZmcFZq8FcqR+l4qLCIqLiYmHhggO+JTc+AQVu7vFo9CLCNCLxnO7Wwi7WqNQi0YIi0ZzUVtbCFpaUHNGiwhGi1GjW7sIWrtzxYvQCIvQo8a7uwit+9EVsmS6d8KLCMKLup+ysgiysp66i8IIi8J4umSyCGSyXJ5UiwhUi1x4ZGQIZGR3XItUCItUn1yyZAj3X7gVi4sFNskFiI6JjouPCIuLBYv3OAWLk4+Pk4sIi4sFq4sFk4uPh4uDCIuLBYv7IgXOWwWRhoyFhoQIi4sFeXEFhoSFioSQCA74lPep938VYYsFi/cUBbWLBYv7FAW291QV9xSLBVlYBaxqnGOLXAiLiwWLZH9oc2wIc2xsd2aCCIuLBYu3BaSUoJqboQiaoZOki6cIi4sFi65/qXKkCIuLBVtcBYv3FAVg+6oVYYsFi7YFtYsFi2AF+2n2FYuLBYuyl66jqgijqqqfsJQIi4sFi18FcoJ3fHt1CHt1g3KLbwiLiwWLaJdtpHIIi4sFu7oFi/sUBfsUiwW9vgVqrHqzi7oIDviU+Cn3KRWL92oF+76LBYv7agX3vosF/BSLFYz3agWLlo+Vk5MIk5OVj5aLCIuLBfgUiwWWi5WHlIMIlIKPgYuACIuLBYv7agWLgIeBgoMIgoKBh4CLCIuLBfwUiwWAi4GPgpMIgpOHlYuWCIuLBQ4AAAAAAAAAAQAAAAEAAAABAAAAAgAACAIAAAACAAAA",
                         "style": "normal",
                         "weight": "400"
                     }
@@ -25039,6 +25091,24 @@
                 "displayName": "Magnifier",
                 "key": "icons/icon1",
                 "unicode": 59906
+            },
+            "wuiED": {
+                "key": "icons/wuiED",
+                "name": "",
+                "displayName": "clock",
+                "unicode": 61463
+            },
+            "p0jdL": {
+                "key": "icons/p0jdL",
+                "name": "",
+                "displayName": "Icon",
+                "unicode": 58921
+            },
+            "Rez7o": {
+                "key": "icons/Rez7o",
+                "name": "",
+                "displayName": "Icon",
+                "unicode": 57555
             }
         },
         "utils": {
